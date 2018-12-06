@@ -46,9 +46,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -183,7 +183,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(517, 8);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 37);
             this.textBox1.TabIndex = 0;
@@ -200,6 +200,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(6, 8);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.MaxLength = 10;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(146, 37);
             this.textBox3.TabIndex = 2;
@@ -224,6 +225,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(6, 52);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox6.MaxLength = 11;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(146, 37);
             this.textBox6.TabIndex = 5;
@@ -266,15 +268,18 @@
             this.panel1.Size = new System.Drawing.Size(752, 174);
             this.panel1.TabIndex = 9;
             // 
-            // textBox8
+            // button1
             // 
-            this.textBox8.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(517, 133);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox8.Size = new System.Drawing.Size(147, 28);
-            this.textBox8.TabIndex = 7;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(6, 98);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 63);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "ثبت";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -300,18 +305,15 @@
             this.comboBox1.Text = "بازدیدکننده";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button1
+            // textBox8
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(6, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 63);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ثبت";
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBox8.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(517, 133);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox8.Size = new System.Drawing.Size(147, 28);
+            this.textBox8.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -333,7 +335,6 @@
             this.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.Name = "frm_Manage_Users";
