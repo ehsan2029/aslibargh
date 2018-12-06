@@ -1,2 +1,12 @@
 D:\gitbargh\aslibargh\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.exe.config
 D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.exe.config
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.exe
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.pdb
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.csprojResolveAssemblyReference.cache
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Form1.resources
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_admin_level.resources
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Properties.Resources.resources
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.csproj.GenerateResource.Cache
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.exe
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.pdb
+D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Users.resources
