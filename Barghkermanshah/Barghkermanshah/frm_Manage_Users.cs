@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Barghkermanshah
 {
-    public partial class frm_Manage_Users : Form
+    public partial class frm_Manage_Voltages : Form
     {
-        public frm_Manage_Users()
+        public frm_Manage_Voltages()
         {
             InitializeComponent();
         }

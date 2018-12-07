@@ -1,6 +1,6 @@
 ﻿namespace Barghkermanshah
 {
-    partial class frm_Manage_Users
+    partial class frm_Manage_Voltages
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Users));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Voltages));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,17 +38,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.TxtFamily = new System.Windows.Forms.TextBox();
+            this.TxtShomareMeli = new System.Windows.Forms.TextBox();
+            this.TxtTavalod = new System.Windows.Forms.TextBox();
+            this.TxtMadrak = new System.Windows.Forms.TextBox();
+            this.TxtPhone = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.BtnOk = new System.Windows.Forms.Button();
+            this.CmbLevel = new System.Windows.Forms.ComboBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -180,87 +180,87 @@
             this.label9.Text = "رمز ورود:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // TxtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(517, 8);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 37);
-            this.textBox1.TabIndex = 0;
+            this.TxtName.Location = new System.Drawing.Point(517, 8);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(146, 37);
+            this.TxtName.TabIndex = 0;
             // 
-            // textBox2
+            // TxtFamily
             // 
-            this.textBox2.Location = new System.Drawing.Point(256, 8);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 37);
-            this.textBox2.TabIndex = 1;
+            this.TxtFamily.Location = new System.Drawing.Point(256, 8);
+            this.TxtFamily.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtFamily.Name = "TxtFamily";
+            this.TxtFamily.Size = new System.Drawing.Size(146, 37);
+            this.TxtFamily.TabIndex = 1;
             // 
-            // textBox3
+            // TxtShomareMeli
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 8);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.MaxLength = 10;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 37);
-            this.textBox3.TabIndex = 2;
+            this.TxtShomareMeli.Location = new System.Drawing.Point(6, 8);
+            this.TxtShomareMeli.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtShomareMeli.MaxLength = 10;
+            this.TxtShomareMeli.Name = "TxtShomareMeli";
+            this.TxtShomareMeli.Size = new System.Drawing.Size(146, 37);
+            this.TxtShomareMeli.TabIndex = 2;
             // 
-            // textBox4
+            // TxtTavalod
             // 
-            this.textBox4.Location = new System.Drawing.Point(517, 52);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 37);
-            this.textBox4.TabIndex = 3;
+            this.TxtTavalod.Location = new System.Drawing.Point(517, 52);
+            this.TxtTavalod.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtTavalod.Name = "TxtTavalod";
+            this.TxtTavalod.Size = new System.Drawing.Size(146, 37);
+            this.TxtTavalod.TabIndex = 3;
             // 
-            // textBox5
+            // TxtMadrak
             // 
-            this.textBox5.Location = new System.Drawing.Point(256, 52);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(146, 37);
-            this.textBox5.TabIndex = 4;
+            this.TxtMadrak.Location = new System.Drawing.Point(256, 52);
+            this.TxtMadrak.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtMadrak.Name = "TxtMadrak";
+            this.TxtMadrak.Size = new System.Drawing.Size(146, 37);
+            this.TxtMadrak.TabIndex = 4;
             // 
-            // textBox6
+            // TxtPhone
             // 
-            this.textBox6.Location = new System.Drawing.Point(6, 52);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.MaxLength = 11;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(146, 37);
-            this.textBox6.TabIndex = 5;
+            this.TxtPhone.Location = new System.Drawing.Point(6, 52);
+            this.TxtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtPhone.MaxLength = 11;
+            this.TxtPhone.Name = "TxtPhone";
+            this.TxtPhone.Size = new System.Drawing.Size(146, 37);
+            this.TxtPhone.TabIndex = 5;
             // 
-            // textBox7
+            // TxtUsername
             // 
-            this.textBox7.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(517, 97);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox7.Size = new System.Drawing.Size(147, 28);
-            this.textBox7.TabIndex = 6;
+            this.TxtUsername.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsername.Location = new System.Drawing.Point(517, 97);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtUsername.Size = new System.Drawing.Size(147, 27);
+            this.TxtUsername.TabIndex = 6;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.BtnOk);
+            this.panel1.Controls.Add(this.CmbLevel);
+            this.panel1.Controls.Add(this.TxtShomareMeli);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.TxtFamily);
+            this.panel1.Controls.Add(this.TxtPassword);
+            this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.TxtPhone);
+            this.panel1.Controls.Add(this.TxtName);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.TxtMadrak);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.TxtTavalod);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -268,52 +268,52 @@
             this.panel1.Size = new System.Drawing.Size(752, 174);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // BtnOk
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(6, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 63);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ثبت";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnOk.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnOk.ForeColor = System.Drawing.Color.White;
+            this.BtnOk.Location = new System.Drawing.Point(6, 98);
+            this.BtnOk.Name = "BtnOk";
+            this.BtnOk.Size = new System.Drawing.Size(146, 63);
+            this.BtnOk.TabIndex = 9;
+            this.BtnOk.Text = "ثبت";
+            this.BtnOk.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // CmbLevel
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbLevel.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 30;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CmbLevel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbLevel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbLevel.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbLevel.FormattingEnabled = true;
+            this.CmbLevel.ItemHeight = 30;
+            this.CmbLevel.Items.AddRange(new object[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.comboBox1.Location = new System.Drawing.Point(256, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 38);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.Text = "بازدیدکننده";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.CmbLevel.Location = new System.Drawing.Point(256, 97);
+            this.CmbLevel.Name = "CmbLevel";
+            this.CmbLevel.Size = new System.Drawing.Size(146, 38);
+            this.CmbLevel.TabIndex = 8;
+            this.CmbLevel.Text = "بازدیدکننده";
+            this.CmbLevel.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox8
+            // TxtPassword
             // 
-            this.textBox8.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(517, 133);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox8.Size = new System.Drawing.Size(147, 28);
-            this.textBox8.TabIndex = 7;
+            this.TxtPassword.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.Location = new System.Drawing.Point(517, 133);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxtPassword.Size = new System.Drawing.Size(147, 27);
+            this.TxtPassword.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -323,7 +323,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(752, 291);
             this.dataGridView1.TabIndex = 10;
             // 
-            // frm_Manage_Users
+            // frm_Manage_Voltages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -337,7 +337,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
-            this.Name = "frm_Manage_Users";
+            this.Name = "frm_Manage_Voltages";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users Managment";
@@ -359,17 +359,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.TextBox TxtFamily;
+        private System.Windows.Forms.TextBox TxtShomareMeli;
+        private System.Windows.Forms.TextBox TxtTavalod;
+        private System.Windows.Forms.TextBox TxtMadrak;
+        private System.Windows.Forms.TextBox TxtPhone;
+        private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TxtPassword;
+        private System.Windows.Forms.ComboBox CmbLevel;
+        private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

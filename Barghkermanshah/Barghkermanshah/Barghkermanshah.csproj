@@ -50,12 +50,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_admin_level.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_admin_level.Designer.cs">
-      <DependentUpon>frm_admin_level.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Manage_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,9 +60,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_admin_level.resx">
-      <DependentUpon>frm_admin_level.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Manage_Users.resx">
       <DependentUpon>frm_Manage_Users.cs</DependentUpon>
