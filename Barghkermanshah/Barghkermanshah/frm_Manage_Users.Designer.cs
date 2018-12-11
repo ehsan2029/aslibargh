@@ -47,9 +47,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnOk = new System.Windows.Forms.Button();
             this.CmbLevel = new System.Windows.Forms.ComboBox();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +62,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("B Bardiya", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(410, 9);
+            this.label1.Location = new System.Drawing.Point(410, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 34);
@@ -74,7 +76,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(671, 9);
+            this.label2.Location = new System.Drawing.Point(671, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 32);
@@ -102,7 +104,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(410, 98);
+            this.label4.Location = new System.Drawing.Point(409, 99);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 32);
@@ -116,7 +118,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(410, 53);
+            this.label5.Location = new System.Drawing.Point(410, 59);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 32);
@@ -130,7 +132,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(668, 93);
+            this.label6.Location = new System.Drawing.Point(667, 99);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 32);
@@ -144,7 +146,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(671, 53);
+            this.label7.Location = new System.Drawing.Point(671, 59);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 32);
@@ -172,7 +174,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(672, 129);
+            this.label9.Location = new System.Drawing.Point(671, 142);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 32);
@@ -182,10 +184,10 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(517, 8);
+            this.TxtName.Location = new System.Drawing.Point(514, 9);
             this.TxtName.Margin = new System.Windows.Forms.Padding(4);
             this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(146, 37);
+            this.TxtName.Size = new System.Drawing.Size(149, 37);
             this.TxtName.TabIndex = 0;
             // 
             // TxtFamily
@@ -207,10 +209,10 @@
             // 
             // TxtTavalod
             // 
-            this.TxtTavalod.Location = new System.Drawing.Point(517, 52);
+            this.TxtTavalod.Location = new System.Drawing.Point(514, 54);
             this.TxtTavalod.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTavalod.Name = "TxtTavalod";
-            this.TxtTavalod.Size = new System.Drawing.Size(146, 37);
+            this.TxtTavalod.Size = new System.Drawing.Size(149, 37);
             this.TxtTavalod.TabIndex = 3;
             // 
             // TxtMadrak
@@ -234,6 +236,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.TxtPassword);
             this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.BtnOk);
             this.panel1.Controls.Add(this.CmbLevel);
@@ -242,7 +247,6 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.TxtFamily);
-            this.panel1.Controls.Add(this.TxtPassword);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.TxtPhone);
@@ -255,7 +259,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 174);
+            this.panel1.Size = new System.Drawing.Size(752, 191);
             this.panel1.TabIndex = 9;
             // 
             // BtnOk
@@ -264,7 +268,7 @@
             this.BtnOk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnOk.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.BtnOk.ForeColor = System.Drawing.Color.White;
-            this.BtnOk.Location = new System.Drawing.Point(6, 98);
+            this.BtnOk.Location = new System.Drawing.Point(6, 101);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Size = new System.Drawing.Size(146, 63);
             this.BtnOk.TabIndex = 9;
@@ -295,30 +299,45 @@
             this.CmbLevel.Text = "بازدیدکننده";
             this.CmbLevel.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(517, 133);
-            this.TxtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TxtPassword.Size = new System.Drawing.Size(147, 27);
-            this.TxtPassword.TabIndex = 7;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(752, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(752, 274);
             this.dataGridView1.TabIndex = 10;
             // 
             // TxtUsername
             // 
-            this.TxtUsername.Location = new System.Drawing.Point(514, 93);
+            this.TxtUsername.Location = new System.Drawing.Point(514, 98);
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.Size = new System.Drawing.Size(151, 37);
             this.TxtUsername.TabIndex = 10;
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(514, 141);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(151, 37);
+            this.TxtPassword.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(410, 142);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 32);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "ایمیل:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(160, 141);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(242, 37);
+            this.textBox1.TabIndex = 13;
             // 
             // frm_Manage_Voltages
             // 
@@ -363,10 +382,12 @@
         private System.Windows.Forms.TextBox TxtMadrak;
         private System.Windows.Forms.TextBox TxtPhone;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.ComboBox CmbLevel;
         private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox TxtUsername;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox TxtPassword;
     }
 }
