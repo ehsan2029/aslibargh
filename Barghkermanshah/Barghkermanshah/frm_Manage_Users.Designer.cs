@@ -56,6 +56,8 @@
             this.barghDataSet = new Barghkermanshah.barghDataSet();
             this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSetTableAdapters.View_user_levelTableAdapter();
+            this.del = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saletavalodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -317,9 +319,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.del,
+            this.edite,
             this.nameDataGridViewTextBoxColumn,
             this.familyDataGridViewTextBoxColumn,
             this.saletavalodDataGridViewTextBoxColumn,
@@ -382,64 +387,80 @@
             // 
             this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
+            // del
+            // 
+            this.del.DataPropertyName = "name";
+            this.del.HeaderText = "حذف";
+            this.del.Name = "del";
+            this.del.Text = "حذف";
+            this.del.UseColumnTextForButtonValue = true;
+            // 
+            // edite
+            // 
+            this.edite.DataPropertyName = "name";
+            this.edite.HeaderText = "ویرایش اطلاعات";
+            this.edite.Name = "edite";
+            this.edite.Text = "ویرایش";
+            this.edite.UseColumnTextForButtonValue = true;
+            // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "نام";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // familyDataGridViewTextBoxColumn
             // 
             this.familyDataGridViewTextBoxColumn.DataPropertyName = "family";
-            this.familyDataGridViewTextBoxColumn.HeaderText = "family";
+            this.familyDataGridViewTextBoxColumn.HeaderText = "نام خانوادگی";
             this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
             // 
             // saletavalodDataGridViewTextBoxColumn
             // 
             this.saletavalodDataGridViewTextBoxColumn.DataPropertyName = "sale_tavalod";
-            this.saletavalodDataGridViewTextBoxColumn.HeaderText = "sale_tavalod";
+            this.saletavalodDataGridViewTextBoxColumn.HeaderText = "سال تولد";
             this.saletavalodDataGridViewTextBoxColumn.Name = "saletavalodDataGridViewTextBoxColumn";
             // 
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "ایمیل";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
             // madrakDataGridViewTextBoxColumn
             // 
             this.madrakDataGridViewTextBoxColumn.DataPropertyName = "madrak";
-            this.madrakDataGridViewTextBoxColumn.HeaderText = "madrak";
+            this.madrakDataGridViewTextBoxColumn.HeaderText = "مدرک";
             this.madrakDataGridViewTextBoxColumn.Name = "madrakDataGridViewTextBoxColumn";
             // 
             // telephoneDataGridViewTextBoxColumn
             // 
             this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "تلفن";
             this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
             // 
             // usernameDataGridViewTextBoxColumn
             // 
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "نام کاربری";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             // 
             // passwordDataGridViewTextBoxColumn
             // 
             this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "پسورد";
             this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
             // 
             // shomaremeliDataGridViewTextBoxColumn
             // 
             this.shomaremeliDataGridViewTextBoxColumn.DataPropertyName = "shomare_meli";
-            this.shomaremeliDataGridViewTextBoxColumn.HeaderText = "shomare_meli";
+            this.shomaremeliDataGridViewTextBoxColumn.HeaderText = "شماره ملی";
             this.shomaremeliDataGridViewTextBoxColumn.Name = "shomaremeliDataGridViewTextBoxColumn";
             // 
             // sathedastrasiDataGridViewTextBoxColumn
             // 
             this.sathedastrasiDataGridViewTextBoxColumn.DataPropertyName = "sathe_dastrasi";
-            this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "sathe_dastrasi";
+            this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "سطح دسترسی";
             this.sathedastrasiDataGridViewTextBoxColumn.Name = "sathedastrasiDataGridViewTextBoxColumn";
             // 
             // frm_Manage_Voltages
@@ -457,9 +478,8 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.Name = "frm_Manage_Voltages";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Users Managment";
+            this.Text = "مدیریت کاربران";
             this.Load += new System.EventHandler(this.frm_Manage_Voltages_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -498,6 +518,8 @@
         private barghDataSet barghDataSet;
         private System.Windows.Forms.BindingSource viewuserlevelBindingSource;
         private barghDataSetTableAdapters.View_user_levelTableAdapter view_user_levelTableAdapter;
+        private System.Windows.Forms.DataGridViewButtonColumn del;
+        private System.Windows.Forms.DataGridViewButtonColumn edite;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn familyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn saletavalodDataGridViewTextBoxColumn;
