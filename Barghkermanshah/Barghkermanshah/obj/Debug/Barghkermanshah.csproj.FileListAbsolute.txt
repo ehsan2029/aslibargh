@@ -19,3 +19,6 @@ H:\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Form1.res
 H:\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Voltages.resources
 H:\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Properties.Resources.resources
 H:\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.csproj.GenerateResource.Cache
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.exe.config
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.exe
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.pdb
