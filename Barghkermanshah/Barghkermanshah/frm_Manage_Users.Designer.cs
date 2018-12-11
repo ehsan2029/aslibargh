@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Voltages));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,8 +53,23 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.barghDataSet = new Barghkermanshah.barghDataSet();
+            this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSetTableAdapters.View_user_levelTableAdapter();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saletavalodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.madrakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shomaremeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sathedastrasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -301,7 +317,20 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.familyDataGridViewTextBoxColumn,
+            this.saletavalodDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.madrakDataGridViewTextBoxColumn,
+            this.telephoneDataGridViewTextBoxColumn,
+            this.usernameDataGridViewTextBoxColumn,
+            this.passwordDataGridViewTextBoxColumn,
+            this.shomaremeliDataGridViewTextBoxColumn,
+            this.sathedastrasiDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.viewuserlevelBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(752, 274);
@@ -339,6 +368,80 @@
             this.textBox1.Size = new System.Drawing.Size(242, 37);
             this.textBox1.TabIndex = 13;
             // 
+            // barghDataSet
+            // 
+            this.barghDataSet.DataSetName = "barghDataSet";
+            this.barghDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // viewuserlevelBindingSource
+            // 
+            this.viewuserlevelBindingSource.DataMember = "View_user_level";
+            this.viewuserlevelBindingSource.DataSource = this.barghDataSet;
+            // 
+            // view_user_levelTableAdapter
+            // 
+            this.view_user_levelTableAdapter.ClearBeforeFill = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // familyDataGridViewTextBoxColumn
+            // 
+            this.familyDataGridViewTextBoxColumn.DataPropertyName = "family";
+            this.familyDataGridViewTextBoxColumn.HeaderText = "family";
+            this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
+            // 
+            // saletavalodDataGridViewTextBoxColumn
+            // 
+            this.saletavalodDataGridViewTextBoxColumn.DataPropertyName = "sale_tavalod";
+            this.saletavalodDataGridViewTextBoxColumn.HeaderText = "sale_tavalod";
+            this.saletavalodDataGridViewTextBoxColumn.Name = "saletavalodDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // madrakDataGridViewTextBoxColumn
+            // 
+            this.madrakDataGridViewTextBoxColumn.DataPropertyName = "madrak";
+            this.madrakDataGridViewTextBoxColumn.HeaderText = "madrak";
+            this.madrakDataGridViewTextBoxColumn.Name = "madrakDataGridViewTextBoxColumn";
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // shomaremeliDataGridViewTextBoxColumn
+            // 
+            this.shomaremeliDataGridViewTextBoxColumn.DataPropertyName = "shomare_meli";
+            this.shomaremeliDataGridViewTextBoxColumn.HeaderText = "shomare_meli";
+            this.shomaremeliDataGridViewTextBoxColumn.Name = "shomaremeliDataGridViewTextBoxColumn";
+            // 
+            // sathedastrasiDataGridViewTextBoxColumn
+            // 
+            this.sathedastrasiDataGridViewTextBoxColumn.DataPropertyName = "sathe_dastrasi";
+            this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "sathe_dastrasi";
+            this.sathedastrasiDataGridViewTextBoxColumn.Name = "sathedastrasiDataGridViewTextBoxColumn";
+            // 
             // frm_Manage_Voltages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -357,9 +460,12 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users Managment";
+            this.Load += new System.EventHandler(this.frm_Manage_Voltages_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,5 +495,18 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TxtPassword;
+        private barghDataSet barghDataSet;
+        private System.Windows.Forms.BindingSource viewuserlevelBindingSource;
+        private barghDataSetTableAdapters.View_user_levelTableAdapter view_user_levelTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn familyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn saletavalodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn madrakDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shomaremeliDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sathedastrasiDataGridViewTextBoxColumn;
     }
 }

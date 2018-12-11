@@ -21,5 +21,12 @@ namespace Barghkermanshah
         {
 
         }
+
+        private void frm_Manage_Voltages_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'barghDataSet.View_user_level' table. You can move, or remove it, as needed.
+            this.view_user_levelTableAdapter.Fill(this.barghDataSet.View_user_level);
+
+        }
     }
 }
