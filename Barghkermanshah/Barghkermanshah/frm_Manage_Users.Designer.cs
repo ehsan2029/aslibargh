@@ -44,12 +44,12 @@
             this.TxtTavalod = new System.Windows.Forms.TextBox();
             this.TxtMadrak = new System.Windows.Forms.TextBox();
             this.TxtPhone = new System.Windows.Forms.TextBox();
-            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnOk = new System.Windows.Forms.Button();
             this.CmbLevel = new System.Windows.Forms.ComboBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -230,20 +230,11 @@
             this.TxtPhone.Size = new System.Drawing.Size(146, 37);
             this.TxtPhone.TabIndex = 5;
             // 
-            // TxtUsername
-            // 
-            this.TxtUsername.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsername.Location = new System.Drawing.Point(517, 97);
-            this.TxtUsername.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TxtUsername.Size = new System.Drawing.Size(147, 27);
-            this.TxtUsername.TabIndex = 6;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.BtnOk);
             this.panel1.Controls.Add(this.CmbLevel);
             this.panel1.Controls.Add(this.TxtShomareMeli);
@@ -252,7 +243,6 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.TxtFamily);
             this.panel1.Controls.Add(this.TxtPassword);
-            this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.TxtPhone);
@@ -323,6 +313,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(752, 291);
             this.dataGridView1.TabIndex = 10;
             // 
+            // TxtUsername
+            // 
+            this.TxtUsername.Location = new System.Drawing.Point(514, 93);
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(151, 37);
+            this.TxtUsername.TabIndex = 10;
+            // 
             // frm_Manage_Voltages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -365,11 +362,11 @@
         private System.Windows.Forms.TextBox TxtTavalod;
         private System.Windows.Forms.TextBox TxtMadrak;
         private System.Windows.Forms.TextBox TxtPhone;
-        private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.ComboBox CmbLevel;
         private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox TxtUsername;
     }
 }
