@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="barghDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barghDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Classconn.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="barghDataSet.xsc">
+      <DependentUpon>barghDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>barghDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="barghDataSet.xss">
+      <DependentUpon>barghDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

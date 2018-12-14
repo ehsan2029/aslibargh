@@ -46,16 +46,13 @@
             this.TxtMadrak = new System.Windows.Forms.TextBox();
             this.TxtPhone = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnOk = new System.Windows.Forms.Button();
-            this.CmbLevel = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TxtUsername = new System.Windows.Forms.TextBox();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.barghDataSet = new Barghkermanshah.barghDataSet();
-            this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSetTableAdapters.View_user_levelTableAdapter();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.BtnOk = new System.Windows.Forms.Button();
+            this.sathe_dastrasi = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.del = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,10 +65,13 @@
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shomaremeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sathedastrasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barghDataSet = new Barghkermanshah.barghDataSet();
+            this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSetTableAdapters.View_user_levelTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -254,12 +254,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtemail);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.TxtPassword);
             this.panel1.Controls.Add(this.TxtUsername);
             this.panel1.Controls.Add(this.BtnOk);
-            this.panel1.Controls.Add(this.CmbLevel);
+            this.panel1.Controls.Add(this.sathe_dastrasi);
             this.panel1.Controls.Add(this.TxtShomareMeli);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -280,6 +280,38 @@
             this.panel1.Size = new System.Drawing.Size(752, 191);
             this.panel1.TabIndex = 9;
             // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(160, 141);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(242, 37);
+            this.txtemail.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(410, 142);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 32);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "ایمیل:";
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(514, 141);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(151, 37);
+            this.TxtPassword.TabIndex = 11;
+            // 
+            // TxtUsername
+            // 
+            this.TxtUsername.Location = new System.Drawing.Point(514, 98);
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(151, 37);
+            this.TxtUsername.TabIndex = 10;
+            // 
             // BtnOk
             // 
             this.BtnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -292,30 +324,31 @@
             this.BtnOk.TabIndex = 9;
             this.BtnOk.Text = "ثبت";
             this.BtnOk.UseVisualStyleBackColor = false;
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
-            // CmbLevel
+            // sathe_dastrasi
             // 
-            this.CmbLevel.AutoCompleteCustomSource.AddRange(new string[] {
+            this.sathe_dastrasi.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.CmbLevel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CmbLevel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.CmbLevel.BackColor = System.Drawing.SystemColors.Window;
-            this.CmbLevel.FormattingEnabled = true;
-            this.CmbLevel.ItemHeight = 30;
-            this.CmbLevel.Items.AddRange(new object[] {
+            this.sathe_dastrasi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sathe_dastrasi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.sathe_dastrasi.BackColor = System.Drawing.SystemColors.Window;
+            this.sathe_dastrasi.FormattingEnabled = true;
+            this.sathe_dastrasi.ItemHeight = 30;
+            this.sathe_dastrasi.Items.AddRange(new object[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.CmbLevel.Location = new System.Drawing.Point(256, 97);
-            this.CmbLevel.Name = "CmbLevel";
-            this.CmbLevel.Size = new System.Drawing.Size(146, 38);
-            this.CmbLevel.TabIndex = 8;
-            this.CmbLevel.Text = "بازدیدکننده";
-            this.CmbLevel.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.sathe_dastrasi.Location = new System.Drawing.Point(256, 97);
+            this.sathe_dastrasi.Name = "sathe_dastrasi";
+            this.sathe_dastrasi.Size = new System.Drawing.Size(146, 38);
+            this.sathe_dastrasi.TabIndex = 8;
+            this.sathe_dastrasi.Text = "بازدیدکننده";
+            this.sathe_dastrasi.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -340,52 +373,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(752, 274);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // TxtUsername
-            // 
-            this.TxtUsername.Location = new System.Drawing.Point(514, 98);
-            this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(151, 37);
-            this.TxtUsername.TabIndex = 10;
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Location = new System.Drawing.Point(514, 141);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(151, 37);
-            this.TxtPassword.TabIndex = 11;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("B Bardiya", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(410, 142);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 32);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "ایمیل:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(160, 141);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 37);
-            this.textBox1.TabIndex = 13;
-            // 
-            // barghDataSet
-            // 
-            this.barghDataSet.DataSetName = "barghDataSet";
-            this.barghDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewuserlevelBindingSource
-            // 
-            this.viewuserlevelBindingSource.DataMember = "View_user_level";
-            this.viewuserlevelBindingSource.DataSource = this.barghDataSet;
-            // 
-            // view_user_levelTableAdapter
-            // 
-            this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
             // del
             // 
@@ -463,6 +450,20 @@
             this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "سطح دسترسی";
             this.sathedastrasiDataGridViewTextBoxColumn.Name = "sathedastrasiDataGridViewTextBoxColumn";
             // 
+            // viewuserlevelBindingSource
+            // 
+            this.viewuserlevelBindingSource.DataMember = "View_user_level";
+            this.viewuserlevelBindingSource.DataSource = this.barghDataSet;
+            // 
+            // barghDataSet
+            // 
+            this.barghDataSet.DataSetName = "barghDataSet";
+            this.barghDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // view_user_levelTableAdapter
+            // 
+            this.view_user_levelTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_Manage_Voltages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
@@ -484,8 +485,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -508,11 +509,11 @@
         private System.Windows.Forms.TextBox TxtMadrak;
         private System.Windows.Forms.TextBox TxtPhone;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox CmbLevel;
+        private System.Windows.Forms.ComboBox sathe_dastrasi;
         private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox TxtUsername;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TxtPassword;
         private barghDataSet barghDataSet;
