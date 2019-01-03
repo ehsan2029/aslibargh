@@ -50,6 +50,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>barghDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="barghDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barghDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="barghDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barghDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Classconn.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -90,6 +100,28 @@
     </None>
     <None Include="barghDataSet.xss">
       <DependentUpon>barghDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSet1.xsc">
+      <DependentUpon>barghDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>barghDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="barghDataSet1.xss">
+      <DependentUpon>barghDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSet2.xsc">
+      <DependentUpon>barghDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>barghDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="barghDataSet2.xss">
+      <DependentUpon>barghDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
