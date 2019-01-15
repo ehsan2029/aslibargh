@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnFilter = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtfilter = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnedite = new System.Windows.Forms.Button();
             this.BtnOk = new System.Windows.Forms.Button();
-            this.sathe_dastrasi = new System.Windows.Forms.ComboBox();
+            this.CmbOstan = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TxtFamily = new System.Windows.Forms.TextBox();
+            this.TxtPostName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbVoltage = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.del = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -52,7 +52,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BtnFilter);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtfilter);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -65,16 +65,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "فیلتر اطلاعات";
             // 
-            // button1
+            // BtnFilter
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(22, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "فیلتر";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnFilter.ForeColor = System.Drawing.Color.White;
+            this.BtnFilter.Location = new System.Drawing.Point(22, 109);
+            this.BtnFilter.Name = "BtnFilter";
+            this.BtnFilter.Size = new System.Drawing.Size(125, 39);
+            this.BtnFilter.TabIndex = 2;
+            this.BtnFilter.Text = "فیلتر";
+            this.BtnFilter.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -96,12 +96,12 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnedite);
-            this.groupBox2.Controls.Add(this.TxtFamily);
+            this.groupBox2.Controls.Add(this.TxtPostName);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.BtnOk);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.CmbVoltage);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.sathe_dastrasi);
+            this.groupBox2.Controls.Add(this.CmbOstan);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(339, 12);
@@ -139,28 +139,28 @@
             this.BtnOk.Text = "ثبت";
             this.BtnOk.UseVisualStyleBackColor = false;
             // 
-            // sathe_dastrasi
+            // CmbOstan
             // 
-            this.sathe_dastrasi.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbOstan.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.sathe_dastrasi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sathe_dastrasi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.sathe_dastrasi.BackColor = System.Drawing.SystemColors.Window;
-            this.sathe_dastrasi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sathe_dastrasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sathe_dastrasi.FormattingEnabled = true;
-            this.sathe_dastrasi.ItemHeight = 16;
-            this.sathe_dastrasi.Items.AddRange(new object[] {
+            this.CmbOstan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbOstan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbOstan.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbOstan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbOstan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbOstan.FormattingEnabled = true;
+            this.CmbOstan.ItemHeight = 16;
+            this.CmbOstan.Items.AddRange(new object[] {
             "کرمانشاه"});
-            this.sathe_dastrasi.Location = new System.Drawing.Point(158, 21);
-            this.sathe_dastrasi.Margin = new System.Windows.Forms.Padding(2);
-            this.sathe_dastrasi.Name = "sathe_dastrasi";
-            this.sathe_dastrasi.Size = new System.Drawing.Size(108, 24);
-            this.sathe_dastrasi.TabIndex = 29;
-            this.sathe_dastrasi.Text = "کرمانشاه";
+            this.CmbOstan.Location = new System.Drawing.Point(158, 21);
+            this.CmbOstan.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbOstan.Name = "CmbOstan";
+            this.CmbOstan.Size = new System.Drawing.Size(108, 24);
+            this.CmbOstan.TabIndex = 29;
+            this.CmbOstan.Text = "کرمانشاه";
             // 
             // label4
             // 
@@ -176,15 +176,15 @@
             this.label4.Text = "استان";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtFamily
+            // TxtPostName
             // 
-            this.TxtFamily.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFamily.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtFamily.Location = new System.Drawing.Point(158, 60);
-            this.TxtFamily.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.TxtFamily.Name = "TxtFamily";
-            this.TxtFamily.Size = new System.Drawing.Size(105, 23);
-            this.TxtFamily.TabIndex = 17;
+            this.TxtPostName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPostName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtPostName.Location = new System.Drawing.Point(158, 60);
+            this.TxtPostName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtPostName.Name = "TxtPostName";
+            this.TxtPostName.Size = new System.Drawing.Size(105, 23);
+            this.TxtPostName.TabIndex = 17;
             // 
             // label1
             // 
@@ -214,32 +214,32 @@
             this.label2.Text = "سطح ولتاژ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // CmbVoltage
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbVoltage.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 16;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CmbVoltage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbVoltage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbVoltage.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbVoltage.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbVoltage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbVoltage.FormattingEnabled = true;
+            this.CmbVoltage.ItemHeight = 16;
+            this.CmbVoltage.Items.AddRange(new object[] {
             "63 KV",
             "132 KV",
             "230 KV",
             "400 KV"});
-            this.comboBox1.Location = new System.Drawing.Point(10, 21);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(67, 24);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "63 KV";
+            this.CmbVoltage.Location = new System.Drawing.Point(10, 21);
+            this.CmbVoltage.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbVoltage.Name = "CmbVoltage";
+            this.CmbVoltage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmbVoltage.Size = new System.Drawing.Size(67, 24);
+            this.CmbVoltage.TabIndex = 29;
+            this.CmbVoltage.Text = "63 KV";
             // 
             // dataGridView1
             // 
@@ -294,17 +294,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnFilter;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtfilter;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnedite;
         private System.Windows.Forms.Button BtnOk;
-        private System.Windows.Forms.ComboBox sathe_dastrasi;
+        private System.Windows.Forms.ComboBox CmbOstan;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtFamily;
+        private System.Windows.Forms.TextBox TxtPostName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbVoltage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewButtonColumn del;

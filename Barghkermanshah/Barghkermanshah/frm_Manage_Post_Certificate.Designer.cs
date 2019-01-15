@@ -29,47 +29,47 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnFilter = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtfilter = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnedite = new System.Windows.Forms.Button();
-            this.TxtFamily = new System.Windows.Forms.TextBox();
+            this.TxtDispachCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnOk = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbVoltage = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.sathe_dastrasi = new System.Windows.Forms.ComboBox();
+            this.CmbOstan = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CmbPostName = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtSaleSakht = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtEtesaleKotah = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtTedadeHV = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtArayeshHV = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtArayeshLV = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtTedadeLV = new System.Windows.Forms.TextBox();
+            this.TxtTedadeTerans = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtZarfiateTransha = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnBrowsPost = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnUpload = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnBrowsHefazat = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnBrowsTanzimat = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.BtnVazeiatTanzimat = new System.Windows.Forms.Button();
+            this.BtnVazeiatHefazat = new System.Windows.Forms.Button();
+            this.BtnVazeiatPost = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.del = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -82,7 +82,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BtnFilter);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtfilter);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -95,16 +95,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "فیلتر اطلاعات";
             // 
-            // button1
+            // BtnFilter
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(22, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "فیلتر";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnFilter.ForeColor = System.Drawing.Color.White;
+            this.BtnFilter.Location = new System.Drawing.Point(22, 110);
+            this.BtnFilter.Name = "BtnFilter";
+            this.BtnFilter.Size = new System.Drawing.Size(90, 39);
+            this.BtnFilter.TabIndex = 2;
+            this.BtnFilter.Text = "فیلتر";
+            this.BtnFilter.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -125,31 +125,31 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.TxtZarfiateTransha);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.TxtTedadeTerans);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.TxtTedadeLV);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.TxtArayeshLV);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.TxtArayeshHV);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.TxtTedadeHV);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.TxtEtesaleKotah);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.TxtSaleSakht);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.CmbPostName);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.btnedite);
-            this.groupBox2.Controls.Add(this.TxtFamily);
+            this.groupBox2.Controls.Add(this.TxtDispachCode);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.BtnOk);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.CmbVoltage);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.sathe_dastrasi);
+            this.groupBox2.Controls.Add(this.CmbOstan);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(535, 13);
@@ -173,15 +173,15 @@
             this.btnedite.Text = "اعمال تغییرات";
             this.btnedite.UseVisualStyleBackColor = false;
             // 
-            // TxtFamily
+            // TxtDispachCode
             // 
-            this.TxtFamily.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFamily.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtFamily.Location = new System.Drawing.Point(5, 16);
-            this.TxtFamily.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.TxtFamily.Name = "TxtFamily";
-            this.TxtFamily.Size = new System.Drawing.Size(75, 23);
-            this.TxtFamily.TabIndex = 17;
+            this.TxtDispachCode.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDispachCode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtDispachCode.Location = new System.Drawing.Point(5, 16);
+            this.TxtDispachCode.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtDispachCode.Name = "TxtDispachCode";
+            this.TxtDispachCode.Size = new System.Drawing.Size(75, 23);
+            this.TxtDispachCode.TabIndex = 17;
             // 
             // label1
             // 
@@ -211,32 +211,32 @@
             this.BtnOk.Text = "ثبت";
             this.BtnOk.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // CmbVoltage
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbVoltage.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 16;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CmbVoltage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbVoltage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbVoltage.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbVoltage.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbVoltage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbVoltage.FormattingEnabled = true;
+            this.CmbVoltage.ItemHeight = 16;
+            this.CmbVoltage.Items.AddRange(new object[] {
             "63 KV",
             "132 KV",
             "230 KV",
             "400 KV"});
-            this.comboBox1.Location = new System.Drawing.Point(375, 15);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(67, 24);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "63 KV";
+            this.CmbVoltage.Location = new System.Drawing.Point(375, 15);
+            this.CmbVoltage.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbVoltage.Name = "CmbVoltage";
+            this.CmbVoltage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmbVoltage.Size = new System.Drawing.Size(67, 24);
+            this.CmbVoltage.TabIndex = 29;
+            this.CmbVoltage.Text = "63 KV";
             // 
             // label2
             // 
@@ -252,28 +252,28 @@
             this.label2.Text = "سطح ولتاژ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // sathe_dastrasi
+            // CmbOstan
             // 
-            this.sathe_dastrasi.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbOstan.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.sathe_dastrasi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sathe_dastrasi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.sathe_dastrasi.BackColor = System.Drawing.SystemColors.Window;
-            this.sathe_dastrasi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sathe_dastrasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sathe_dastrasi.FormattingEnabled = true;
-            this.sathe_dastrasi.ItemHeight = 16;
-            this.sathe_dastrasi.Items.AddRange(new object[] {
+            this.CmbOstan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbOstan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbOstan.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbOstan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbOstan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbOstan.FormattingEnabled = true;
+            this.CmbOstan.ItemHeight = 16;
+            this.CmbOstan.Items.AddRange(new object[] {
             "کرمانشاه"});
-            this.sathe_dastrasi.Location = new System.Drawing.Point(523, 15);
-            this.sathe_dastrasi.Margin = new System.Windows.Forms.Padding(2);
-            this.sathe_dastrasi.Name = "sathe_dastrasi";
-            this.sathe_dastrasi.Size = new System.Drawing.Size(108, 24);
-            this.sathe_dastrasi.TabIndex = 29;
-            this.sathe_dastrasi.Text = "کرمانشاه";
+            this.CmbOstan.Location = new System.Drawing.Point(523, 15);
+            this.CmbOstan.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbOstan.Name = "CmbOstan";
+            this.CmbOstan.Size = new System.Drawing.Size(108, 24);
+            this.CmbOstan.TabIndex = 29;
+            this.CmbOstan.Text = "کرمانشاه";
             // 
             // label4
             // 
@@ -289,25 +289,25 @@
             this.label4.Text = "استان";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // CmbPostName
             // 
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbPostName.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.comboBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 16;
-            this.comboBox2.Location = new System.Drawing.Point(198, 15);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(108, 24);
-            this.comboBox2.TabIndex = 37;
+            this.CmbPostName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbPostName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbPostName.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbPostName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbPostName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbPostName.FormattingEnabled = true;
+            this.CmbPostName.ItemHeight = 16;
+            this.CmbPostName.Location = new System.Drawing.Point(198, 15);
+            this.CmbPostName.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbPostName.Name = "CmbPostName";
+            this.CmbPostName.Size = new System.Drawing.Size(108, 24);
+            this.CmbPostName.TabIndex = 37;
             // 
             // label3
             // 
@@ -323,16 +323,16 @@
             this.label3.Text = "نام پست";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // TxtSaleSakht
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(5, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 23);
-            this.textBox1.TabIndex = 39;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TxtSaleSakht.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSaleSakht.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtSaleSakht.Location = new System.Drawing.Point(5, 52);
+            this.TxtSaleSakht.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtSaleSakht.Name = "TxtSaleSakht";
+            this.TxtSaleSakht.Size = new System.Drawing.Size(75, 23);
+            this.TxtSaleSakht.TabIndex = 39;
+            this.TxtSaleSakht.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -349,15 +349,15 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox2
+            // TxtEtesaleKotah
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(467, 176);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 23);
-            this.textBox2.TabIndex = 41;
+            this.TxtEtesaleKotah.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEtesaleKotah.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtEtesaleKotah.Location = new System.Drawing.Point(467, 176);
+            this.TxtEtesaleKotah.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtEtesaleKotah.Name = "TxtEtesaleKotah";
+            this.TxtEtesaleKotah.Size = new System.Drawing.Size(105, 23);
+            this.TxtEtesaleKotah.TabIndex = 41;
             // 
             // label6
             // 
@@ -373,15 +373,15 @@
             this.label6.Text = "سطح اتصال کوتاه";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // TxtTedadeHV
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(523, 96);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(49, 23);
-            this.textBox3.TabIndex = 43;
+            this.TxtTedadeHV.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTedadeHV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtTedadeHV.Location = new System.Drawing.Point(523, 96);
+            this.TxtTedadeHV.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtTedadeHV.Name = "TxtTedadeHV";
+            this.TxtTedadeHV.Size = new System.Drawing.Size(49, 23);
+            this.TxtTedadeHV.TabIndex = 43;
             // 
             // label7
             // 
@@ -397,15 +397,15 @@
             this.label7.Text = "تعداد خطوط HV";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // TxtArayeshHV
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(5, 96);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(408, 23);
-            this.textBox4.TabIndex = 45;
+            this.TxtArayeshHV.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtArayeshHV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtArayeshHV.Location = new System.Drawing.Point(5, 96);
+            this.TxtArayeshHV.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtArayeshHV.Name = "TxtArayeshHV";
+            this.TxtArayeshHV.Size = new System.Drawing.Size(408, 23);
+            this.TxtArayeshHV.TabIndex = 45;
             // 
             // label8
             // 
@@ -421,15 +421,15 @@
             this.label8.Text = "نوع آرایش HV";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox5
+            // TxtArayeshLV
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(5, 136);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(408, 23);
-            this.textBox5.TabIndex = 47;
+            this.TxtArayeshLV.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtArayeshLV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtArayeshLV.Location = new System.Drawing.Point(5, 136);
+            this.TxtArayeshLV.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtArayeshLV.Name = "TxtArayeshLV";
+            this.TxtArayeshLV.Size = new System.Drawing.Size(408, 23);
+            this.TxtArayeshLV.TabIndex = 47;
             // 
             // label9
             // 
@@ -459,25 +459,25 @@
             this.label10.Text = "تعداد خطوط LV";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // TxtTedadeLV
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(523, 136);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(49, 23);
-            this.textBox6.TabIndex = 49;
+            this.TxtTedadeLV.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTedadeLV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtTedadeLV.Location = new System.Drawing.Point(523, 136);
+            this.TxtTedadeLV.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtTedadeLV.Name = "TxtTedadeLV";
+            this.TxtTedadeLV.Size = new System.Drawing.Size(49, 23);
+            this.TxtTedadeLV.TabIndex = 49;
             // 
-            // textBox7
+            // TxtTedadeTerans
             // 
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox7.Location = new System.Drawing.Point(523, 55);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(49, 23);
-            this.textBox7.TabIndex = 51;
+            this.TxtTedadeTerans.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTedadeTerans.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtTedadeTerans.Location = new System.Drawing.Point(523, 55);
+            this.TxtTedadeTerans.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtTedadeTerans.Name = "TxtTedadeTerans";
+            this.TxtTedadeTerans.Size = new System.Drawing.Size(49, 23);
+            this.TxtTedadeTerans.TabIndex = 51;
             // 
             // label12
             // 
@@ -493,15 +493,15 @@
             this.label12.Text = "تعداد ترانسهای قدرت";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox8
+            // TxtZarfiateTransha
             // 
-            this.textBox8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox8.Location = new System.Drawing.Point(198, 52);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(105, 23);
-            this.textBox8.TabIndex = 53;
+            this.TxtZarfiateTransha.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtZarfiateTransha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtZarfiateTransha.Location = new System.Drawing.Point(198, 52);
+            this.TxtZarfiateTransha.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtZarfiateTransha.Name = "TxtZarfiateTransha";
+            this.TxtZarfiateTransha.Size = new System.Drawing.Size(105, 23);
+            this.TxtZarfiateTransha.TabIndex = 53;
             // 
             // label13
             // 
@@ -517,32 +517,32 @@
             this.label13.Text = "مجموع ظرفیت ترانس ها";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // BtnBrowsPost
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(70, 23);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 39);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnBrowsPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnBrowsPost.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBrowsPost.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBrowsPost.ForeColor = System.Drawing.Color.White;
+            this.BtnBrowsPost.Location = new System.Drawing.Point(70, 23);
+            this.BtnBrowsPost.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBrowsPost.Name = "BtnBrowsPost";
+            this.BtnBrowsPost.Size = new System.Drawing.Size(44, 39);
+            this.BtnBrowsPost.TabIndex = 54;
+            this.BtnBrowsPost.Text = "...";
+            this.BtnBrowsPost.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.BtnVazeiatTanzimat);
+            this.groupBox3.Controls.Add(this.BtnVazeiatHefazat);
+            this.groupBox3.Controls.Add(this.BtnVazeiatPost);
+            this.groupBox3.Controls.Add(this.BtnUpload);
+            this.groupBox3.Controls.Add(this.BtnBrowsTanzimat);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.BtnBrowsHefazat);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.BtnBrowsPost);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
@@ -552,18 +552,18 @@
             this.groupBox3.Size = new System.Drawing.Size(308, 215);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "فیلتر اطلاعات";
+            this.groupBox3.Text = "آپلود فایل ها";
             // 
-            // button3
+            // BtnUpload
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(22, 153);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 39);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "آپلود";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnUpload.ForeColor = System.Drawing.Color.White;
+            this.BtnUpload.Location = new System.Drawing.Point(22, 153);
+            this.BtnUpload.Name = "BtnUpload";
+            this.BtnUpload.Size = new System.Drawing.Size(166, 39);
+            this.BtnUpload.TabIndex = 2;
+            this.BtnUpload.Text = "آپلود";
+            this.BtnUpload.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -575,19 +575,19 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "دیاگرام تک خطی پست";
             // 
-            // button4
+            // BtnBrowsHefazat
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(70, 66);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(44, 39);
-            this.button4.TabIndex = 56;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BtnBrowsHefazat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnBrowsHefazat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBrowsHefazat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBrowsHefazat.ForeColor = System.Drawing.Color.White;
+            this.BtnBrowsHefazat.Location = new System.Drawing.Point(70, 66);
+            this.BtnBrowsHefazat.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBrowsHefazat.Name = "BtnBrowsHefazat";
+            this.BtnBrowsHefazat.Size = new System.Drawing.Size(44, 39);
+            this.BtnBrowsHefazat.TabIndex = 56;
+            this.BtnBrowsHefazat.Text = "...";
+            this.BtnBrowsHefazat.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -599,19 +599,19 @@
             this.label15.TabIndex = 55;
             this.label15.Text = "دیاگرام تک خطی حفاظت";
             // 
-            // button5
+            // BtnBrowsTanzimat
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(70, 109);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(44, 39);
-            this.button5.TabIndex = 58;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BtnBrowsTanzimat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnBrowsTanzimat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBrowsTanzimat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBrowsTanzimat.ForeColor = System.Drawing.Color.White;
+            this.BtnBrowsTanzimat.Location = new System.Drawing.Point(70, 109);
+            this.BtnBrowsTanzimat.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBrowsTanzimat.Name = "BtnBrowsTanzimat";
+            this.BtnBrowsTanzimat.Size = new System.Drawing.Size(44, 39);
+            this.BtnBrowsTanzimat.TabIndex = 58;
+            this.BtnBrowsTanzimat.Text = "...";
+            this.BtnBrowsTanzimat.UseVisualStyleBackColor = false;
             // 
             // label16
             // 
@@ -623,44 +623,44 @@
             this.label16.TabIndex = 57;
             this.label16.Text = "دفترچه تنظیمات";
             // 
-            // button6
+            // BtnVazeiatTanzimat
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(22, 109);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(44, 39);
-            this.button6.TabIndex = 61;
-            this.button6.UseVisualStyleBackColor = false;
+            this.BtnVazeiatTanzimat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnVazeiatTanzimat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVazeiatTanzimat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVazeiatTanzimat.ForeColor = System.Drawing.Color.White;
+            this.BtnVazeiatTanzimat.Location = new System.Drawing.Point(22, 109);
+            this.BtnVazeiatTanzimat.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnVazeiatTanzimat.Name = "BtnVazeiatTanzimat";
+            this.BtnVazeiatTanzimat.Size = new System.Drawing.Size(44, 39);
+            this.BtnVazeiatTanzimat.TabIndex = 61;
+            this.BtnVazeiatTanzimat.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // BtnVazeiatHefazat
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(22, 66);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(44, 39);
-            this.button7.TabIndex = 60;
-            this.button7.UseVisualStyleBackColor = false;
+            this.BtnVazeiatHefazat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnVazeiatHefazat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVazeiatHefazat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVazeiatHefazat.ForeColor = System.Drawing.Color.White;
+            this.BtnVazeiatHefazat.Location = new System.Drawing.Point(22, 66);
+            this.BtnVazeiatHefazat.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnVazeiatHefazat.Name = "BtnVazeiatHefazat";
+            this.BtnVazeiatHefazat.Size = new System.Drawing.Size(44, 39);
+            this.BtnVazeiatHefazat.TabIndex = 60;
+            this.BtnVazeiatHefazat.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // BtnVazeiatPost
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(22, 23);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(44, 39);
-            this.button8.TabIndex = 59;
-            this.button8.UseVisualStyleBackColor = false;
+            this.BtnVazeiatPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnVazeiatPost.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVazeiatPost.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVazeiatPost.ForeColor = System.Drawing.Color.White;
+            this.BtnVazeiatPost.Location = new System.Drawing.Point(22, 23);
+            this.BtnVazeiatPost.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnVazeiatPost.Name = "BtnVazeiatPost";
+            this.BtnVazeiatPost.Size = new System.Drawing.Size(44, 39);
+            this.BtnVazeiatPost.TabIndex = 59;
+            this.BtnVazeiatPost.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -718,45 +718,45 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnFilter;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtfilter;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnedite;
-        private System.Windows.Forms.TextBox TxtFamily;
+        private System.Windows.Forms.TextBox TxtDispachCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnOk;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbVoltage;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox sathe_dastrasi;
+        private System.Windows.Forms.ComboBox CmbOstan;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtSaleSakht;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CmbPostName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtArayeshHV;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtTedadeHV;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtEtesaleKotah;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtZarfiateTransha;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtTedadeTerans;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtTedadeLV;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtArayeshLV;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnBrowsPost;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnVazeiatTanzimat;
+        private System.Windows.Forms.Button BtnVazeiatHefazat;
+        private System.Windows.Forms.Button BtnVazeiatPost;
+        private System.Windows.Forms.Button BtnUpload;
+        private System.Windows.Forms.Button BtnBrowsTanzimat;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnBrowsHefazat;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dataGridView1;
