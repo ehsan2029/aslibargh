@@ -52,7 +52,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtfilter = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.btnedite = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -76,7 +75,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSet2TableAdapters.View_user_levelTableAdapter();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barghDataSet2)).BeginInit();
@@ -258,8 +256,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.btnedite);
             this.groupBox2.Controls.Add(this.txtemail);
             this.groupBox2.Controls.Add(this.label10);
@@ -290,16 +286,6 @@
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "اطلاعات";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(293, 165);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 16);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "label13";
-            this.label13.Visible = false;
             // 
             // btnedite
             // 
@@ -589,16 +575,6 @@
             // 
             this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(205, 165);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 16);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "label12";
-            this.label12.Visible = false;
-            // 
             // frm_Manage_Voltages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -662,7 +638,6 @@
         private barghDataSet2 barghDataSet2;
         private System.Windows.Forms.BindingSource viewuserlevelBindingSource;
         private barghDataSet2TableAdapters.View_user_levelTableAdapter view_user_levelTableAdapter;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridViewButtonColumn del;
         private System.Windows.Forms.DataGridViewButtonColumn edite;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
@@ -677,6 +652,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sathedastrasiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iduserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label12;
     }
 }

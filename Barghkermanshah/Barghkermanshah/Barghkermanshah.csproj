@@ -67,6 +67,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Manage_Post.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Post.Designer.cs">
+      <DependentUpon>frm_Manage_Post.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Post_Certificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Post_Certificate.Designer.cs">
+      <DependentUpon>frm_Manage_Post_Certificate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Manage_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Post.resx">
+      <DependentUpon>frm_Manage_Post.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Post_Certificate.resx">
+      <DependentUpon>frm_Manage_Post_Certificate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Manage_Users.resx">
       <DependentUpon>frm_Manage_Users.cs</DependentUpon>
