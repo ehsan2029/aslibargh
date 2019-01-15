@@ -31,6 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Voltages));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.del = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saletavalodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.madrakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shomaremeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sathedastrasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iduserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barghDataSet2 = new Barghkermanshah.barghDataSet2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -39,7 +53,6 @@
             this.txtfilter = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnedite = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -63,20 +76,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSet2TableAdapters.View_user_levelTableAdapter();
-            this.del = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saletavalodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.madrakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shomaremeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sathedastrasiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iduserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barghDataSet2)).BeginInit();
@@ -112,6 +112,94 @@
             this.dataGridView1.Size = new System.Drawing.Size(968, 242);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // del
+            // 
+            this.del.HeaderText = "حذف";
+            this.del.Name = "del";
+            this.del.Text = "حذف";
+            this.del.UseColumnTextForButtonValue = true;
+            // 
+            // edite
+            // 
+            this.edite.HeaderText = "ویرایش اطلاعات";
+            this.edite.Name = "edite";
+            this.edite.Text = "ویرایش";
+            this.edite.UseColumnTextForButtonValue = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "نام";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // familyDataGridViewTextBoxColumn
+            // 
+            this.familyDataGridViewTextBoxColumn.DataPropertyName = "family";
+            this.familyDataGridViewTextBoxColumn.HeaderText = "نام خانوادگی";
+            this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
+            // 
+            // saletavalodDataGridViewTextBoxColumn
+            // 
+            this.saletavalodDataGridViewTextBoxColumn.DataPropertyName = "sale_tavalod";
+            this.saletavalodDataGridViewTextBoxColumn.HeaderText = "سال تولد";
+            this.saletavalodDataGridViewTextBoxColumn.Name = "saletavalodDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "ایمیل";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // madrakDataGridViewTextBoxColumn
+            // 
+            this.madrakDataGridViewTextBoxColumn.DataPropertyName = "madrak";
+            this.madrakDataGridViewTextBoxColumn.HeaderText = "مدرک";
+            this.madrakDataGridViewTextBoxColumn.Name = "madrakDataGridViewTextBoxColumn";
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "تلفن همراه";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "نام کاربری";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "رمز عبور";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // shomaremeliDataGridViewTextBoxColumn
+            // 
+            this.shomaremeliDataGridViewTextBoxColumn.DataPropertyName = "shomare_meli";
+            this.shomaremeliDataGridViewTextBoxColumn.HeaderText = "شماره ملی";
+            this.shomaremeliDataGridViewTextBoxColumn.Name = "shomaremeliDataGridViewTextBoxColumn";
+            // 
+            // sathedastrasiDataGridViewTextBoxColumn
+            // 
+            this.sathedastrasiDataGridViewTextBoxColumn.DataPropertyName = "sathe_dastrasi";
+            this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "سطح دسترسی";
+            this.sathedastrasiDataGridViewTextBoxColumn.Name = "sathedastrasiDataGridViewTextBoxColumn";
+            // 
+            // iduserDataGridViewTextBoxColumn
+            // 
+            this.iduserDataGridViewTextBoxColumn.DataPropertyName = "id_user";
+            this.iduserDataGridViewTextBoxColumn.HeaderText = "id_user";
+            this.iduserDataGridViewTextBoxColumn.Name = "iduserDataGridViewTextBoxColumn";
+            this.iduserDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Visible = false;
             // 
             // viewuserlevelBindingSource
             // 
@@ -194,6 +282,7 @@
             this.groupBox2.Controls.Add(this.TxtTavalod);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(336, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -207,24 +296,15 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(293, 165);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 23);
+            this.label13.Size = new System.Drawing.Size(54, 16);
             this.label13.TabIndex = 36;
             this.label13.Text = "label13";
             this.label13.Visible = false;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(205, 165);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 23);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "label12";
-            this.label12.Visible = false;
-            // 
             // btnedite
             // 
             this.btnedite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnedite.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnedite.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnedite.Location = new System.Drawing.Point(7, 133);
             this.btnedite.Name = "btnedite";
@@ -509,97 +589,19 @@
             // 
             this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
-            // del
+            // label12
             // 
-            this.del.HeaderText = "حذف";
-            this.del.Name = "del";
-            this.del.Text = "حذف";
-            this.del.UseColumnTextForButtonValue = true;
-            // 
-            // edite
-            // 
-            this.edite.HeaderText = "ویرایش اطلاعات";
-            this.edite.Name = "edite";
-            this.edite.Text = "ویرایش";
-            this.edite.UseColumnTextForButtonValue = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "نام";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // familyDataGridViewTextBoxColumn
-            // 
-            this.familyDataGridViewTextBoxColumn.DataPropertyName = "family";
-            this.familyDataGridViewTextBoxColumn.HeaderText = "نام خانوادگی";
-            this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
-            // 
-            // saletavalodDataGridViewTextBoxColumn
-            // 
-            this.saletavalodDataGridViewTextBoxColumn.DataPropertyName = "sale_tavalod";
-            this.saletavalodDataGridViewTextBoxColumn.HeaderText = "سال تولد";
-            this.saletavalodDataGridViewTextBoxColumn.Name = "saletavalodDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "ایمیل";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // madrakDataGridViewTextBoxColumn
-            // 
-            this.madrakDataGridViewTextBoxColumn.DataPropertyName = "madrak";
-            this.madrakDataGridViewTextBoxColumn.HeaderText = "مدرک";
-            this.madrakDataGridViewTextBoxColumn.Name = "madrakDataGridViewTextBoxColumn";
-            // 
-            // telephoneDataGridViewTextBoxColumn
-            // 
-            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "تلفن همراه";
-            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "نام کاربری";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "رمز عبور";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // shomaremeliDataGridViewTextBoxColumn
-            // 
-            this.shomaremeliDataGridViewTextBoxColumn.DataPropertyName = "shomare_meli";
-            this.shomaremeliDataGridViewTextBoxColumn.HeaderText = "شماره ملی";
-            this.shomaremeliDataGridViewTextBoxColumn.Name = "shomaremeliDataGridViewTextBoxColumn";
-            // 
-            // sathedastrasiDataGridViewTextBoxColumn
-            // 
-            this.sathedastrasiDataGridViewTextBoxColumn.DataPropertyName = "sathe_dastrasi";
-            this.sathedastrasiDataGridViewTextBoxColumn.HeaderText = "سطح دسترسی";
-            this.sathedastrasiDataGridViewTextBoxColumn.Name = "sathedastrasiDataGridViewTextBoxColumn";
-            // 
-            // iduserDataGridViewTextBoxColumn
-            // 
-            this.iduserDataGridViewTextBoxColumn.DataPropertyName = "id_user";
-            this.iduserDataGridViewTextBoxColumn.HeaderText = "id_user";
-            this.iduserDataGridViewTextBoxColumn.Name = "iduserDataGridViewTextBoxColumn";
-            this.iduserDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(205, 165);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 16);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "label12";
+            this.label12.Visible = false;
             // 
             // frm_Manage_Voltages
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -657,7 +659,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnedite;
-        private System.Windows.Forms.Label label12;
         private barghDataSet2 barghDataSet2;
         private System.Windows.Forms.BindingSource viewuserlevelBindingSource;
         private barghDataSet2TableAdapters.View_user_levelTableAdapter view_user_levelTableAdapter;
@@ -676,5 +677,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sathedastrasiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iduserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label12;
     }
 }
