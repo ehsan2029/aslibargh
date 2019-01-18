@@ -1,6 +1,6 @@
 ﻿namespace Barghkermanshah
 {
-    partial class frm_Manage_Voltages
+    partial class frm_Manage_Users
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Voltages));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Manage_Users));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.del = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -47,19 +47,18 @@
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barghDataSet2 = new Barghkermanshah.barghDataSet2();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.GbSearch = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtfilter = new System.Windows.Forms.TextBox();
+            this.TxtSearchName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnedite = new System.Windows.Forms.Button();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.BtnEdit = new System.Windows.Forms.Button();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.TxtUsername = new System.Windows.Forms.TextBox();
             this.BtnOk = new System.Windows.Forms.Button();
-            this.sathe_dastrasi = new System.Windows.Forms.ComboBox();
-            this.TxtShomareMeli = new System.Windows.Forms.TextBox();
+            this.CmbSatheDastrasi = new System.Windows.Forms.ComboBox();
+            this.TxtCodeMeli = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -75,10 +74,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSet2TableAdapters.View_user_levelTableAdapter();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TxtSearchCodeMeli = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barghDataSet2)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.GbSearch.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,11 +104,11 @@
             this.iduserDataGridViewTextBoxColumn,
             this.idDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.viewuserlevelBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 203);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 212);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(968, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(894, 239);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -209,61 +210,51 @@
             this.barghDataSet2.DataSetName = "barghDataSet2";
             this.barghDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // groupBox1
+            // GbSearch
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.txtfilter);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(9, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(321, 192);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "فیلتر اطلاعات";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(89, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "فیلتر";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GbSearch.BackColor = System.Drawing.Color.Transparent;
+            this.GbSearch.Controls.Add(this.label12);
+            this.GbSearch.Controls.Add(this.TxtSearchCodeMeli);
+            this.GbSearch.Controls.Add(this.label11);
+            this.GbSearch.Controls.Add(this.TxtSearchName);
+            this.GbSearch.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.GbSearch.ForeColor = System.Drawing.Color.Black;
+            this.GbSearch.Location = new System.Drawing.Point(12, 12);
+            this.GbSearch.Name = "GbSearch";
+            this.GbSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.GbSearch.Size = new System.Drawing.Size(238, 192);
+            this.GbSearch.TabIndex = 14;
+            this.GbSearch.TabStop = false;
+            this.GbSearch.Text = "جستوجو";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.Location = new System.Drawing.Point(90, 50);
+            this.label11.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label11.Location = new System.Drawing.Point(145, 32);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 18);
+            this.label11.Size = new System.Drawing.Size(83, 28);
             this.label11.TabIndex = 1;
-            this.label11.Text = "کد ملی را وارد کنید";
+            this.label11.Text = "بر اساس نام:";
             // 
-            // txtfilter
+            // TxtSearchName
             // 
-            this.txtfilter.Location = new System.Drawing.Point(48, 78);
-            this.txtfilter.Name = "txtfilter";
-            this.txtfilter.Size = new System.Drawing.Size(217, 23);
-            this.txtfilter.TabIndex = 0;
+            this.TxtSearchName.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtSearchName.Location = new System.Drawing.Point(6, 66);
+            this.TxtSearchName.Name = "TxtSearchName";
+            this.TxtSearchName.Size = new System.Drawing.Size(217, 36);
+            this.TxtSearchName.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnedite);
-            this.groupBox2.Controls.Add(this.txtemail);
+            this.groupBox2.Controls.Add(this.BtnEdit);
+            this.groupBox2.Controls.Add(this.TxtEmail);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.TxtPassword);
             this.groupBox2.Controls.Add(this.TxtUsername);
             this.groupBox2.Controls.Add(this.BtnOk);
-            this.groupBox2.Controls.Add(this.sathe_dastrasi);
-            this.groupBox2.Controls.Add(this.TxtShomareMeli);
+            this.groupBox2.Controls.Add(this.CmbSatheDastrasi);
+            this.groupBox2.Controls.Add(this.TxtCodeMeli);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label9);
@@ -278,132 +269,132 @@
             this.groupBox2.Controls.Add(this.TxtTavalod);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(336, 3);
+            this.groupBox2.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox2.Location = new System.Drawing.Point(256, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox2.Size = new System.Drawing.Size(631, 195);
+            this.groupBox2.Size = new System.Drawing.Size(650, 195);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "اطلاعات";
             // 
-            // btnedite
+            // BtnEdit
             // 
-            this.btnedite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnedite.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnedite.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnedite.Location = new System.Drawing.Point(7, 133);
-            this.btnedite.Name = "btnedite";
-            this.btnedite.Size = new System.Drawing.Size(105, 36);
-            this.btnedite.TabIndex = 35;
-            this.btnedite.Text = "اعمال تغییرات";
-            this.btnedite.UseVisualStyleBackColor = false;
-            this.btnedite.Click += new System.EventHandler(this.btnedite_Click);
+            this.BtnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnEdit.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnEdit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnEdit.Location = new System.Drawing.Point(7, 153);
+            this.BtnEdit.Name = "BtnEdit";
+            this.BtnEdit.Size = new System.Drawing.Size(113, 36);
+            this.BtnEdit.TabIndex = 35;
+            this.BtnEdit.Text = "اعمال تغییرات";
+            this.BtnEdit.UseVisualStyleBackColor = false;
+            this.BtnEdit.Click += new System.EventHandler(this.btnedite_Click);
             // 
-            // txtemail
+            // TxtEmail
             // 
-            this.txtemail.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtemail.Location = new System.Drawing.Point(125, 124);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(213, 23);
-            this.txtemail.TabIndex = 34;
+            this.TxtEmail.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtEmail.Location = new System.Drawing.Point(125, 154);
+            this.TxtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(230, 36);
+            this.TxtEmail.TabIndex = 34;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(341, 125);
+            this.label10.Location = new System.Drawing.Point(359, 157);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 16);
+            this.label10.Size = new System.Drawing.Size(44, 28);
             this.label10.TabIndex = 33;
             this.label10.Text = "ایمیل";
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtPassword.Location = new System.Drawing.Point(447, 122);
+            this.TxtPassword.Location = new System.Drawing.Point(463, 159);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(109, 23);
+            this.TxtPassword.Size = new System.Drawing.Size(109, 36);
             this.TxtPassword.TabIndex = 32;
             // 
             // TxtUsername
             // 
-            this.TxtUsername.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsername.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtUsername.Location = new System.Drawing.Point(447, 89);
+            this.TxtUsername.Location = new System.Drawing.Point(462, 116);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(109, 23);
+            this.TxtUsername.Size = new System.Drawing.Size(109, 36);
             this.TxtUsername.TabIndex = 31;
             // 
             // BtnOk
             // 
-            this.BtnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BtnOk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnOk.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOk.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.BtnOk.ForeColor = System.Drawing.Color.White;
-            this.BtnOk.Location = new System.Drawing.Point(7, 89);
+            this.BtnOk.Location = new System.Drawing.Point(7, 108);
             this.BtnOk.Margin = new System.Windows.Forms.Padding(2);
             this.BtnOk.Name = "BtnOk";
-            this.BtnOk.Size = new System.Drawing.Size(105, 39);
+            this.BtnOk.Size = new System.Drawing.Size(114, 39);
             this.BtnOk.TabIndex = 30;
             this.BtnOk.Text = "ثبت";
             this.BtnOk.UseVisualStyleBackColor = false;
             this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click_1);
             // 
-            // sathe_dastrasi
+            // CmbSatheDastrasi
             // 
-            this.sathe_dastrasi.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CmbSatheDastrasi.AutoCompleteCustomSource.AddRange(new string[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.sathe_dastrasi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sathe_dastrasi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.sathe_dastrasi.BackColor = System.Drawing.SystemColors.Window;
-            this.sathe_dastrasi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sathe_dastrasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sathe_dastrasi.FormattingEnabled = true;
-            this.sathe_dastrasi.ItemHeight = 16;
-            this.sathe_dastrasi.Items.AddRange(new object[] {
+            this.CmbSatheDastrasi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CmbSatheDastrasi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.CmbSatheDastrasi.BackColor = System.Drawing.SystemColors.Window;
+            this.CmbSatheDastrasi.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.CmbSatheDastrasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CmbSatheDastrasi.FormattingEnabled = true;
+            this.CmbSatheDastrasi.ItemHeight = 28;
+            this.CmbSatheDastrasi.Items.AddRange(new object[] {
             "بازدیدکننده",
             "سرپرست",
             "ناظر",
             "ادمین"});
-            this.sathe_dastrasi.Location = new System.Drawing.Point(219, 90);
-            this.sathe_dastrasi.Margin = new System.Windows.Forms.Padding(2);
-            this.sathe_dastrasi.Name = "sathe_dastrasi";
-            this.sathe_dastrasi.Size = new System.Drawing.Size(117, 24);
-            this.sathe_dastrasi.TabIndex = 29;
-            this.sathe_dastrasi.Text = "بازدیدکننده";
+            this.CmbSatheDastrasi.Location = new System.Drawing.Point(211, 113);
+            this.CmbSatheDastrasi.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbSatheDastrasi.Name = "CmbSatheDastrasi";
+            this.CmbSatheDastrasi.Size = new System.Drawing.Size(144, 36);
+            this.CmbSatheDastrasi.TabIndex = 29;
+            this.CmbSatheDastrasi.Text = "بازدیدکننده";
             // 
-            // TxtShomareMeli
+            // TxtCodeMeli
             // 
-            this.TxtShomareMeli.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtShomareMeli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtShomareMeli.Location = new System.Drawing.Point(7, 25);
-            this.TxtShomareMeli.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.TxtShomareMeli.MaxLength = 10;
-            this.TxtShomareMeli.Name = "TxtShomareMeli";
-            this.TxtShomareMeli.Size = new System.Drawing.Size(114, 23);
-            this.TxtShomareMeli.TabIndex = 19;
+            this.TxtCodeMeli.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtCodeMeli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtCodeMeli.Location = new System.Drawing.Point(7, 22);
+            this.TxtCodeMeli.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.TxtCodeMeli.MaxLength = 10;
+            this.TxtCodeMeli.Name = "TxtCodeMeli";
+            this.TxtCodeMeli.Size = new System.Drawing.Size(114, 36);
+            this.TxtCodeMeli.TabIndex = 19;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(341, 92);
+            this.label4.Location = new System.Drawing.Point(359, 116);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 16);
+            this.label4.Size = new System.Drawing.Size(100, 28);
             this.label4.TabIndex = 20;
             this.label4.Text = "سطح دسترسی";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -412,12 +403,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(125, 27);
+            this.label3.Location = new System.Drawing.Point(125, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.Size = new System.Drawing.Size(73, 28);
             this.label3.TabIndex = 18;
             this.label3.Text = "شماره ملی";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -426,36 +417,36 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(557, 125);
+            this.label9.Location = new System.Drawing.Point(576, 162);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 16);
+            this.label9.Size = new System.Drawing.Size(61, 28);
             this.label9.TabIndex = 28;
             this.label9.Text = "رمز ورود";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtFamily
             // 
-            this.TxtFamily.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFamily.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtFamily.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtFamily.Location = new System.Drawing.Point(231, 22);
+            this.TxtFamily.Location = new System.Drawing.Point(211, 22);
             this.TxtFamily.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.TxtFamily.Name = "TxtFamily";
-            this.TxtFamily.Size = new System.Drawing.Size(105, 23);
+            this.TxtFamily.Size = new System.Drawing.Size(144, 36);
             this.TxtFamily.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(341, 25);
+            this.label1.Location = new System.Drawing.Point(359, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 16);
+            this.label1.Size = new System.Drawing.Size(85, 28);
             this.label1.TabIndex = 16;
             this.label1.Text = "نام خانوادگی";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,95 +455,95 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(554, 92);
+            this.label6.Location = new System.Drawing.Point(575, 119);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 16);
+            this.label6.Size = new System.Drawing.Size(71, 28);
             this.label6.TabIndex = 23;
             this.label6.Text = "نام کاربری";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtPhone
             // 
-            this.TxtPhone.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPhone.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtPhone.Location = new System.Drawing.Point(7, 60);
+            this.TxtPhone.Location = new System.Drawing.Point(7, 66);
             this.TxtPhone.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.TxtPhone.MaxLength = 11;
             this.TxtPhone.Name = "TxtPhone";
-            this.TxtPhone.Size = new System.Drawing.Size(114, 23);
+            this.TxtPhone.Size = new System.Drawing.Size(114, 36);
             this.TxtPhone.TabIndex = 26;
             // 
             // TxtName
             // 
-            this.TxtName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtName.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtName.Location = new System.Drawing.Point(446, 24);
+            this.TxtName.Location = new System.Drawing.Point(463, 22);
             this.TxtName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(109, 23);
+            this.TxtName.Size = new System.Drawing.Size(109, 36);
             this.TxtName.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(124, 63);
+            this.label8.Location = new System.Drawing.Point(125, 69);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.Size = new System.Drawing.Size(82, 28);
             this.label8.TabIndex = 27;
             this.label8.Text = "شماره همراه";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtMadrak
             // 
-            this.TxtMadrak.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMadrak.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtMadrak.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtMadrak.Location = new System.Drawing.Point(231, 56);
+            this.TxtMadrak.Location = new System.Drawing.Point(211, 66);
             this.TxtMadrak.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.TxtMadrak.Name = "TxtMadrak";
-            this.TxtMadrak.Size = new System.Drawing.Size(105, 23);
+            this.TxtMadrak.Size = new System.Drawing.Size(144, 36);
             this.TxtMadrak.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(559, 27);
+            this.label2.Location = new System.Drawing.Point(576, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 17);
+            this.label2.Size = new System.Drawing.Size(27, 28);
             this.label2.TabIndex = 14;
             this.label2.Text = "نام";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtTavalod
             // 
-            this.TxtTavalod.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTavalod.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TxtTavalod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtTavalod.Location = new System.Drawing.Point(447, 57);
+            this.TxtTavalod.Location = new System.Drawing.Point(463, 66);
             this.TxtTavalod.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.TxtTavalod.Name = "TxtTavalod";
-            this.TxtTavalod.Size = new System.Drawing.Size(108, 23);
+            this.TxtTavalod.Size = new System.Drawing.Size(108, 36);
             this.TxtTavalod.TabIndex = 21;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(557, 60);
+            this.label7.Location = new System.Drawing.Point(575, 69);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 16);
+            this.label7.Size = new System.Drawing.Size(64, 28);
             this.label7.TabIndex = 25;
             this.label7.Text = "سال تولد";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -561,12 +552,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(341, 60);
+            this.label5.Location = new System.Drawing.Point(359, 69);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.Size = new System.Drawing.Size(100, 28);
             this.label5.TabIndex = 22;
             this.label5.Text = "مدرک تحصیلی";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -575,30 +566,48 @@
             // 
             this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
-            // frm_Manage_Voltages
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label12.Location = new System.Drawing.Point(117, 113);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(111, 28);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "بر اساس کد ملی:";
+            // 
+            // TxtSearchCodeMeli
+            // 
+            this.TxtSearchCodeMeli.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtSearchCodeMeli.Location = new System.Drawing.Point(6, 144);
+            this.TxtSearchCodeMeli.Name = "TxtSearchCodeMeli";
+            this.TxtSearchCodeMeli.Size = new System.Drawing.Size(217, 36);
+            this.TxtSearchCodeMeli.TabIndex = 2;
+            // 
+            // frm_Manage_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(979, 441);
+            this.ClientSize = new System.Drawing.Size(915, 453);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GbSearch);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.Name = "frm_Manage_Voltages";
+            this.Name = "frm_Manage_Users";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "مدیریت کاربران";
             this.Load += new System.EventHandler(this.frm_Manage_Voltages_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barghDataSet2)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GbSearch.ResumeLayout(false);
+            this.GbSearch.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -608,18 +617,17 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox GbSearch;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtfilter;
+        private System.Windows.Forms.TextBox TxtSearchName;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Button BtnOk;
-        private System.Windows.Forms.ComboBox sathe_dastrasi;
-        private System.Windows.Forms.TextBox TxtShomareMeli;
+        private System.Windows.Forms.ComboBox CmbSatheDastrasi;
+        private System.Windows.Forms.TextBox TxtCodeMeli;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
@@ -634,7 +642,7 @@
         private System.Windows.Forms.TextBox TxtTavalod;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnedite;
+        private System.Windows.Forms.Button BtnEdit;
         private barghDataSet2 barghDataSet2;
         private System.Windows.Forms.BindingSource viewuserlevelBindingSource;
         private barghDataSet2TableAdapters.View_user_levelTableAdapter view_user_levelTableAdapter;
@@ -652,5 +660,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sathedastrasiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iduserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox TxtSearchCodeMeli;
     }
 }

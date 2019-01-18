@@ -16,7 +16,7 @@ namespace Barghkermanshah
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Manage_Voltages());
+            Application.Run(new frm_Manage_Post_Certificate());
         }
     }
 }

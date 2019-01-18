@@ -12,9 +12,9 @@ using System.Globalization;
 
 namespace Barghkermanshah
 {
-    public partial class frm_Manage_Voltages : Form
+    public partial class frm_Manage_Users : Form
     {
-        public frm_Manage_Voltages()
+        public frm_Manage_Users()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace Barghkermanshah
             //this.view_user_levelTableAdapter.Fill(this.barghDataSet1.View_user_level);
             // TODO: This line of code loads data into the 'barghDataSet.View_user_level' table. You can move, or remove it, as needed.
             //this.view_user_levelTableAdapter.Fill(this.barghDataSet.View_user_level);
-            btnedite.Enabled = false;
+            BtnEdit.Enabled = false;
         }
         private void insert_level()
         {
@@ -48,7 +48,7 @@ namespace Barghkermanshah
                     comm.CommandText = cmdString;
                     comm.CommandText = cmdString;
                     //comm.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
-                    comm.Parameters.AddWithValue("sathe_dastrasi", sathe_dastrasi.Text);
+                    comm.Parameters.AddWithValue("sathe_dastrasi", CmbSatheDastrasi.Text);
                     try
                     {
                         conn.Open();
@@ -83,8 +83,8 @@ namespace Barghkermanshah
                     comm.Connection = conn;
                     comm.CommandText = cmdString;
                     comm.CommandText = cmdString;
-                    comm.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
-                    comm.Parameters.AddWithValue("sathe_dastrasi", sathe_dastrasi.Text);
+                    comm.Parameters.AddWithValue("shomare_meli", TxtCodeMeli.Text);
+                    comm.Parameters.AddWithValue("sathe_dastrasi", CmbSatheDastrasi.Text);
                     try
                     {
                         conn.Open();
@@ -108,7 +108,7 @@ namespace Barghkermanshah
         }
         private void BtnOk_Click_1(object sender, EventArgs e)
         {
-            if (TxtName.Equals("") || TxtFamily.Text.Equals("") || TxtShomareMeli.Text.Equals("") || TxtTavalod.Text.Equals("") || TxtMadrak.Text.Equals("") || TxtPhone.Text.Equals("") || TxtUsername.Text.Equals("") || sathe_dastrasi.Text.Equals("") || TxtPassword.Text.Equals(""))
+            if (TxtName.Equals("") || TxtFamily.Text.Equals("") || TxtCodeMeli.Text.Equals("") || TxtTavalod.Text.Equals("") || TxtMadrak.Text.Equals("") || TxtPhone.Text.Equals("") || TxtUsername.Text.Equals("") || CmbSatheDastrasi.Text.Equals("") || TxtPassword.Text.Equals(""))
             {
                 MessageBox.Show(this, "اطلاعات ناقص هستند", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading);
                 return;
@@ -150,8 +150,8 @@ namespace Barghkermanshah
                     comm.Parameters.AddWithValue("name", TxtName.Text);
                     comm.Parameters.AddWithValue("family", TxtFamily.Text);
                     comm.Parameters.AddWithValue("sale_tavalod", TxtTavalod.Text);
-                    comm.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
-                    comm.Parameters.AddWithValue("email", txtemail.Text);
+                    comm.Parameters.AddWithValue("shomare_meli", TxtCodeMeli.Text);
+                    comm.Parameters.AddWithValue("email", TxtEmail.Text);
                     comm.Parameters.AddWithValue("madrak", TxtMadrak.Text);
                     comm.Parameters.AddWithValue("telephone", TxtPhone.Text);
                     comm.Parameters.AddWithValue("username", TxtUsername.Text);
@@ -170,8 +170,8 @@ namespace Barghkermanshah
                         TxtName.Text="";
                          TxtFamily.Text="";
                          TxtTavalod.Text="";
-                        TxtShomareMeli.Text="";
-                         txtemail.Text="";
+                        TxtCodeMeli.Text="";
+                         TxtEmail.Text="";
                          TxtMadrak.Text="";
                         TxtPhone.Text="";
                         TxtUsername.Text="";
@@ -192,7 +192,7 @@ namespace Barghkermanshah
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtfilter.Text.Equals(""))
+            if (TxtSearchName.Text.Equals(""))
             {
                 MessageBox.Show(this, "لطفاً اطلاعات را وارد کنید", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading);
                 return;
@@ -216,7 +216,7 @@ namespace Barghkermanshah
                 SqlConnection con2 = new SqlConnection(clscon.connstr);
                 //con = new SqlConnection(cs);
                 con2.Open();
-                adapt = new SqlDataAdapter("select * from View_user_level where shomare_meli like N'" + txtfilter.Text + "%' ", con2);
+                adapt = new SqlDataAdapter("select * from View_user_level where shomare_meli like N'" + TxtSearchName.Text + "%' ", con2);
                 dt = new DataTable();
                 adapt.Fill(dt);
                 dataGridView1.DataSource = dt;
@@ -259,7 +259,7 @@ namespace Barghkermanshah
             else if (dataGridView1.Columns[e.ColumnIndex].Name == "edite")
             {
                 BtnOk.Enabled = false;
-                btnedite.Enabled = true;
+                BtnEdit.Enabled = true;
                 //textBox1.Enabled = false;
 
                 if (dataGridView1.Rows.Count > 0)
@@ -270,17 +270,15 @@ namespace Barghkermanshah
                     TxtName.Text = row.Cells[2].Value.ToString();
                     TxtFamily.Text = row.Cells[3].Value.ToString();
                     TxtTavalod.Text = row.Cells[4].Value.ToString();
-                    txtemail.Text = row.Cells[5].Value.ToString();
+                    TxtEmail.Text = row.Cells[5].Value.ToString();
                     TxtMadrak.Text = row.Cells[6].Value.ToString();
                     TxtPhone.Text = row.Cells[7].Value.ToString();
                     TxtUsername.Text = row.Cells[8].Value.ToString();
                     TxtPassword.Text = row.Cells[9].Value.ToString();
-                    TxtShomareMeli.Text = row.Cells[10].Value.ToString();
-                    sathe_dastrasi.Text = row.Cells[11].Value.ToString();
+                    TxtCodeMeli.Text = row.Cells[10].Value.ToString();
+                    CmbSatheDastrasi.Text = row.Cells[11].Value.ToString();
                     //comboBox3.Text = row.Cells[9].Value.ToString();
 
-                    label12.Text = row.Cells[12].Value.ToString();
-                    label13.Text = row.Cells[13].Value.ToString();
                     //and so on
 
                     //dataGridView1.CurrentCell = row.Cells[0]; //set focus to first cell in first row
@@ -299,8 +297,7 @@ namespace Barghkermanshah
                 cmd.CommandType = CommandType.Text;
 
                 //cmd.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
-                cmd.Parameters.AddWithValue("sathe_dastrasi", sathe_dastrasi.Text);
-                cmd.Parameters.AddWithValue("id", label13.Text);
+                cmd.Parameters.AddWithValue("sathe_dastrasi", CmbSatheDastrasi.Text);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -313,7 +310,7 @@ namespace Barghkermanshah
         {
           //  updateuser_level();
 
-            if (TxtName.Equals("") || TxtFamily.Text.Equals("") || TxtShomareMeli.Text.Equals("") || TxtTavalod.Text.Equals("") || TxtMadrak.Text.Equals("") || TxtPhone.Text.Equals("") || TxtUsername.Text.Equals("") || sathe_dastrasi.Text.Equals("") || TxtPassword.Text.Equals(""))
+            if (TxtName.Equals("") || TxtFamily.Text.Equals("") || TxtCodeMeli.Text.Equals("") || TxtTavalod.Text.Equals("") || TxtMadrak.Text.Equals("") || TxtPhone.Text.Equals("") || TxtUsername.Text.Equals("") || CmbSatheDastrasi.Text.Equals("") || TxtPassword.Text.Equals(""))
             {
                 MessageBox.Show(this, "اطلاعات ناقص هستند", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading);
                 return;
@@ -331,25 +328,24 @@ namespace Barghkermanshah
                 cmd.Parameters.AddWithValue("name", TxtName.Text);
                 cmd.Parameters.AddWithValue("family", TxtFamily.Text);
                 cmd.Parameters.AddWithValue("sale_tavalod", TxtTavalod.Text);
-                cmd.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
-                cmd.Parameters.AddWithValue("email", txtemail.Text);
+                cmd.Parameters.AddWithValue("shomare_meli", TxtCodeMeli.Text);
+                cmd.Parameters.AddWithValue("email", TxtEmail.Text);
                 cmd.Parameters.AddWithValue("madrak", TxtMadrak.Text);
                 cmd.Parameters.AddWithValue("telephone", TxtPhone.Text);
                 cmd.Parameters.AddWithValue("username", TxtUsername.Text);
                 cmd.Parameters.AddWithValue("password", TxtPassword.Text);
-                cmd.Parameters.AddWithValue("id_user", label12.Text);
                 //--------------------------------------------------
                 con.Open();
                 cmd.ExecuteNonQuery();
                updateuser_level();
                 MessageBox.Show(this, "تغییرات با موفقیت به ثبت رسید", "اتمام عملیات", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading);
                 BtnOk.Enabled = true;
-                btnedite.Enabled = false;
+                BtnEdit.Enabled = false;
                 TxtName.Text = "";
                 TxtFamily.Text = "";
                 TxtTavalod.Text = "";
-                TxtShomareMeli.Text = "";
-                txtemail.Text = "";
+                TxtCodeMeli.Text = "";
+                TxtEmail.Text = "";
                 TxtMadrak.Text = "";
                 TxtPhone.Text = "";
                 TxtUsername.Text = "";
