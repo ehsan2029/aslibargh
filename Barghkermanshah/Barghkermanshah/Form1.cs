@@ -16,5 +16,24 @@ namespace Barghkermanshah
         {
             InitializeComponent();
         }
+
+        private void مدیریتکااربرانToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Manage_Users usersabt = new frm_Manage_Users();
+            usersabt.Show();
+        }
+
+        private void مدیریتشناسنامهپستToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Manage_Post_Certificate frmpostc = new frm_Manage_Post_Certificate();
+            frmpostc.Show();
+        }
+
+        private void ثبتپستToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Manage_Post frmmp = new frm_Manage_Post();
+            
+            frmmp.Show();
+        }
     }
 }

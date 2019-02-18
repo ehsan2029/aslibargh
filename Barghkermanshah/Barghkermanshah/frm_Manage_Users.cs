@@ -261,7 +261,7 @@ namespace Barghkermanshah
                 BtnOk.Enabled = false;
                 BtnEdit.Enabled = true;
                 //textBox1.Enabled = false;
-
+                
                 if (dataGridView1.Rows.Count > 0)
                 {
                     //textBox1.Enabled = false;
@@ -278,6 +278,8 @@ namespace Barghkermanshah
                     TxtCodeMeli.Text = row.Cells[10].Value.ToString();
                     CmbSatheDastrasi.Text = row.Cells[11].Value.ToString();
                     //comboBox3.Text = row.Cells[9].Value.ToString();
+                    label13.Text = row.Cells[12].Value.ToString();
+                    label14.Text = row.Cells[13].Value.ToString();
 
                     //and so on
 
@@ -298,6 +300,7 @@ namespace Barghkermanshah
 
                 //cmd.Parameters.AddWithValue("shomare_meli", TxtShomareMeli.Text);
                 cmd.Parameters.AddWithValue("sathe_dastrasi", CmbSatheDastrasi.Text);
+                cmd.Parameters.AddWithValue("id", label14.Text);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -334,6 +337,9 @@ namespace Barghkermanshah
                 cmd.Parameters.AddWithValue("telephone", TxtPhone.Text);
                 cmd.Parameters.AddWithValue("username", TxtUsername.Text);
                 cmd.Parameters.AddWithValue("password", TxtPassword.Text);
+                cmd.Parameters.AddWithValue("id_user", label13.Text);
+                //cmd.Parameters.AddWithValue("id", label14.Text);
+            
                 //--------------------------------------------------
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -359,8 +365,80 @@ namespace Barghkermanshah
             //    MessageBox.Show(this, "برنامه قادر به ذخیره سازی اطلاعات نیست", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading);
             //}
                 }
+
+        private void TxtSearchName_TextChanged(object sender, EventArgs e)
+        {
+
+            //Classconn clscon = new Classconn();
+            //SqlConnection con = new SqlConnection(clscon.connstr);
+            //SqlCommand cmd = new SqlCommand("select * from View_user_level where name like N'" + TxtSearchName.Text + "%' and  shomare_meli like N'" + TxtSearchCodeMeli.Text + "%' ", con);
+
+            
+
+            //con.Open();
+            //cmd.ExecuteNonQuery();
+            
+            //this.view_user_levelTableAdapter.Fill(this.barghDataSet2.View_user_level);
+            //con.Close();
+           //------------------------------------------------------------------
+            try
+            {
+                Classconn clscon = new Classconn();
+                SqlConnection con = new SqlConnection(clscon.connstr);
+                SqlDataAdapter adapt;
+                DataTable dt;
+                //con = new SqlConnection(cs);
+                con.Open();
+                adapt = new SqlDataAdapter("select * from View_user_level", con);
+                dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+
+               // SqlConnection con1 = new SqlConnection(clscon.connstr);
+                con.Open();
+                adapt = new SqlDataAdapter("select * from View_user_level where name like N'" + TxtSearchName.Text + "%' and  shomare_meli like N'" + TxtSearchCodeMeli.Text + "%' ", con);
+                dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+                this.view_user_levelTableAdapter.Fill(this.barghDataSet2.View_user_level);
+                //this.rostaTableAdapter.Fill(this.marzdbDataSet.rosta);
             }
+            catch { MessageBox.Show(this, "برنامه قادر به نمایش اطلاعات نیست", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading); }
         }
 
+        private void TxtSearchCodeMeli_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Classconn clscon = new Classconn();
+                SqlConnection con = new SqlConnection(clscon.connstr);
+                SqlDataAdapter adapt;
+                DataTable dt;
+                //con = new SqlConnection(cs);
+                con.Open();
+                adapt = new SqlDataAdapter("select * from View_user_level", con);
+                dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+
+                // SqlConnection con1 = new SqlConnection(clscon.connstr);
+                con.Open();
+                adapt = new SqlDataAdapter("select * from View_user_level where name like N'" + TxtSearchName.Text + "%' and  shomare_meli like N'" + TxtSearchCodeMeli.Text + "%' ", con);
+                dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+                this.view_user_levelTableAdapter.Fill(this.barghDataSet2.View_user_level);
+                //this.rostaTableAdapter.Fill(this.marzdbDataSet.rosta);
+            }
+            catch { MessageBox.Show(this, "برنامه قادر به نمایش اطلاعات نیست", "هشدار", MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading); }
+        }
+
+        }
+            }
+        
         
     

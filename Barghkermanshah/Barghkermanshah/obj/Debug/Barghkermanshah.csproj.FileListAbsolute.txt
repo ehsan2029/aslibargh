@@ -25,9 +25,11 @@ D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermansha
 D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\bin\Debug\Barghkermanshah.pdb
 D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.csprojResolveAssemblyReference.cache
 D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Form1.resources
-D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Voltages.resources
 D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.Properties.Resources.resources
 D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.csproj.GenerateResource.Cache
 D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Post.resources
 D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Post_Certificate.resources
 D:\Users\Emmpower\Documents\GitHub\aslibargh\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Users.resources
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Post.resources
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Post_Certificate.resources
+D:\gitbargh2\aslibargh2\Barghkermanshah\Barghkermanshah\obj\Debug\Barghkermanshah.frm_Manage_Users.resources

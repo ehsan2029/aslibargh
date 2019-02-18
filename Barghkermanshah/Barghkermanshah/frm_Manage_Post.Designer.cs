@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.GbSearch = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.TxtSearchPostName = new System.Windows.Forms.TextBox();
@@ -41,16 +42,27 @@
             this.CmbOstan = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.barghDataSetnamepost = new Barghkermanshah.barghDataSetnamepost();
+            this.tblnamepostBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_name_postTableAdapter = new Barghkermanshah.barghDataSetnamepostTableAdapters.tbl_name_postTableAdapter();
             this.del = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edite = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.idnamepostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ostanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.voltageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namepostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label13 = new System.Windows.Forms.Label();
             this.GbSearch.SuspendLayout();
             this.GbInf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSetnamepost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblnamepostBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // GbSearch
             // 
             this.GbSearch.BackColor = System.Drawing.Color.Transparent;
+            this.GbSearch.Controls.Add(this.label13);
             this.GbSearch.Controls.Add(this.label11);
             this.GbSearch.Controls.Add(this.TxtSearchPostName);
             this.GbSearch.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -80,6 +92,7 @@
             this.TxtSearchPostName.Name = "TxtSearchPostName";
             this.TxtSearchPostName.Size = new System.Drawing.Size(226, 36);
             this.TxtSearchPostName.TabIndex = 0;
+            this.TxtSearchPostName.TextChanged += new System.EventHandler(this.TxtSearchPostName_TextChanged);
             // 
             // GbInf
             // 
@@ -112,6 +125,7 @@
             this.BtnEdit.TabIndex = 35;
             this.BtnEdit.Text = "اعمال تغییرات";
             this.BtnEdit.UseVisualStyleBackColor = false;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // TxtPostName
             // 
@@ -144,12 +158,13 @@
             this.BtnOk.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.BtnOk.ForeColor = System.Drawing.Color.White;
             this.BtnOk.Location = new System.Drawing.Point(5, 71);
-            this.BtnOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnOk.Margin = new System.Windows.Forms.Padding(2);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Size = new System.Drawing.Size(67, 39);
             this.BtnOk.TabIndex = 30;
             this.BtnOk.Text = "ثبت";
             this.BtnOk.UseVisualStyleBackColor = false;
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // CmbVoltage
             // 
@@ -171,7 +186,7 @@
             "230",
             "400"});
             this.CmbVoltage.Location = new System.Drawing.Point(5, 24);
-            this.CmbVoltage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbVoltage.Margin = new System.Windows.Forms.Padding(2);
             this.CmbVoltage.Name = "CmbVoltage";
             this.CmbVoltage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.CmbVoltage.Size = new System.Drawing.Size(67, 36);
@@ -209,7 +224,7 @@
             this.CmbOstan.Items.AddRange(new object[] {
             "کرمانشاه"});
             this.CmbOstan.Location = new System.Drawing.Point(215, 27);
-            this.CmbOstan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbOstan.Margin = new System.Windows.Forms.Padding(2);
             this.CmbOstan.Name = "CmbOstan";
             this.CmbOstan.Size = new System.Drawing.Size(108, 36);
             this.CmbOstan.TabIndex = 29;
@@ -232,16 +247,37 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.del,
-            this.edite});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 139);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edite,
+            this.idnamepostDataGridViewTextBoxColumn,
+            this.ostanDataGridViewTextBoxColumn,
+            this.voltageDataGridViewTextBoxColumn,
+            this.namepostDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblnamepostBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(62, 139);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(656, 215);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 215);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // barghDataSetnamepost
+            // 
+            this.barghDataSetnamepost.DataSetName = "barghDataSetnamepost";
+            this.barghDataSetnamepost.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblnamepostBindingSource
+            // 
+            this.tblnamepostBindingSource.DataMember = "tbl_name_post";
+            this.tblnamepostBindingSource.DataSource = this.barghDataSetnamepost;
+            // 
+            // tbl_name_postTableAdapter
+            // 
+            this.tbl_name_postTableAdapter.ClearBeforeFill = true;
             // 
             // del
             // 
@@ -256,6 +292,42 @@
             this.edite.Name = "edite";
             this.edite.Text = "ویرایش";
             this.edite.UseColumnTextForButtonValue = true;
+            // 
+            // idnamepostDataGridViewTextBoxColumn
+            // 
+            this.idnamepostDataGridViewTextBoxColumn.DataPropertyName = "id_name_post";
+            this.idnamepostDataGridViewTextBoxColumn.HeaderText = "id_name_post";
+            this.idnamepostDataGridViewTextBoxColumn.Name = "idnamepostDataGridViewTextBoxColumn";
+            this.idnamepostDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idnamepostDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // ostanDataGridViewTextBoxColumn
+            // 
+            this.ostanDataGridViewTextBoxColumn.DataPropertyName = "ostan";
+            this.ostanDataGridViewTextBoxColumn.HeaderText = "استان";
+            this.ostanDataGridViewTextBoxColumn.Name = "ostanDataGridViewTextBoxColumn";
+            // 
+            // voltageDataGridViewTextBoxColumn
+            // 
+            this.voltageDataGridViewTextBoxColumn.DataPropertyName = "voltage";
+            this.voltageDataGridViewTextBoxColumn.HeaderText = "ولتاژ";
+            this.voltageDataGridViewTextBoxColumn.Name = "voltageDataGridViewTextBoxColumn";
+            // 
+            // namepostDataGridViewTextBoxColumn
+            // 
+            this.namepostDataGridViewTextBoxColumn.DataPropertyName = "name_post";
+            this.namepostDataGridViewTextBoxColumn.HeaderText = "نام پست";
+            this.namepostDataGridViewTextBoxColumn.Name = "namepostDataGridViewTextBoxColumn";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 28);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "label3";
+            this.label13.Visible = false;
             // 
             // frm_Manage_Post
             // 
@@ -275,6 +347,8 @@
             this.GbInf.ResumeLayout(false);
             this.GbInf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barghDataSetnamepost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblnamepostBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,7 +368,15 @@
         private System.Windows.Forms.ComboBox CmbVoltage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private barghDataSetnamepost barghDataSetnamepost;
+        private System.Windows.Forms.BindingSource tblnamepostBindingSource;
+        private barghDataSetnamepostTableAdapters.tbl_name_postTableAdapter tbl_name_postTableAdapter;
         private System.Windows.Forms.DataGridViewButtonColumn del;
         private System.Windows.Forms.DataGridViewButtonColumn edite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idnamepostDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ostanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn voltageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namepostDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label13;
     }
 }

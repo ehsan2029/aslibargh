@@ -60,6 +60,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>barghDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="barghDataSetnamepost.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barghDataSetnamepost.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Classconn.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -140,6 +145,17 @@
     </None>
     <None Include="barghDataSet2.xss">
       <DependentUpon>barghDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSetnamepost.xsc">
+      <DependentUpon>barghDataSetnamepost.xsd</DependentUpon>
+    </None>
+    <None Include="barghDataSetnamepost.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>barghDataSetnamepost.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="barghDataSetnamepost.xss">
+      <DependentUpon>barghDataSetnamepost.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

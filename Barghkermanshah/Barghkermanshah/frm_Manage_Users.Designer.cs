@@ -48,6 +48,10 @@
             this.viewuserlevelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barghDataSet2 = new Barghkermanshah.barghDataSet2();
             this.GbSearch = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TxtSearchCodeMeli = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.TxtSearchName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -74,8 +78,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.view_user_levelTableAdapter = new Barghkermanshah.barghDataSet2TableAdapters.View_user_levelTableAdapter();
-            this.label12 = new System.Windows.Forms.Label();
-            this.TxtSearchCodeMeli = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewuserlevelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barghDataSet2)).BeginInit();
@@ -213,6 +215,8 @@
             // GbSearch
             // 
             this.GbSearch.BackColor = System.Drawing.Color.Transparent;
+            this.GbSearch.Controls.Add(this.label14);
+            this.GbSearch.Controls.Add(this.label13);
             this.GbSearch.Controls.Add(this.label12);
             this.GbSearch.Controls.Add(this.TxtSearchCodeMeli);
             this.GbSearch.Controls.Add(this.label11);
@@ -225,7 +229,46 @@
             this.GbSearch.Size = new System.Drawing.Size(238, 192);
             this.GbSearch.TabIndex = 14;
             this.GbSearch.TabStop = false;
-            this.GbSearch.Text = "جستوجو";
+            this.GbSearch.Text = "جستجو";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 35);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(70, 28);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "label14";
+            this.label14.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(7, 108);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 28);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "label13";
+            this.label13.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label12.Location = new System.Drawing.Point(117, 113);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(111, 28);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "بر اساس کد ملی:";
+            // 
+            // TxtSearchCodeMeli
+            // 
+            this.TxtSearchCodeMeli.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtSearchCodeMeli.Location = new System.Drawing.Point(6, 144);
+            this.TxtSearchCodeMeli.Name = "TxtSearchCodeMeli";
+            this.TxtSearchCodeMeli.Size = new System.Drawing.Size(217, 36);
+            this.TxtSearchCodeMeli.TabIndex = 2;
+            this.TxtSearchCodeMeli.TextChanged += new System.EventHandler(this.TxtSearchCodeMeli_TextChanged);
             // 
             // label11
             // 
@@ -244,6 +287,7 @@
             this.TxtSearchName.Name = "TxtSearchName";
             this.TxtSearchName.Size = new System.Drawing.Size(217, 36);
             this.TxtSearchName.TabIndex = 0;
+            this.TxtSearchName.TextChanged += new System.EventHandler(this.TxtSearchName_TextChanged);
             // 
             // groupBox2
             // 
@@ -566,27 +610,9 @@
             // 
             this.view_user_levelTableAdapter.ClearBeforeFill = true;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label12.Location = new System.Drawing.Point(117, 113);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 28);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "بر اساس کد ملی:";
-            // 
-            // TxtSearchCodeMeli
-            // 
-            this.TxtSearchCodeMeli.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtSearchCodeMeli.Location = new System.Drawing.Point(6, 144);
-            this.TxtSearchCodeMeli.Name = "TxtSearchCodeMeli";
-            this.TxtSearchCodeMeli.Size = new System.Drawing.Size(217, 36);
-            this.TxtSearchCodeMeli.TabIndex = 2;
-            // 
             // frm_Manage_Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -662,5 +688,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox TxtSearchCodeMeli;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
